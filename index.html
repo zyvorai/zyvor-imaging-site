@@ -35,29 +35,52 @@
     <span>ZYVOR IMAGING</span>
   </a>
   <nav id="sections" aria-label="Sections">
-    <a href="#see">See it</a><a href="#capabilities">Capabilities</a><a href="#security">Security</a><a href="#deploy">Deploy</a><a href="#honest">Honest limits</a><a href="#faq">FAQ</a>
+    <a href="#try">Try</a><a href="#see">See it</a><a href="#capabilities">Capabilities</a><a href="#security">Security</a><a href="#deploy">Deploy</a><a href="#honest">Honest limits</a><a href="#faq">FAQ</a>
   </nav>
   <div class="bar-actions">
     <button id="theme" class="icon" type="button" aria-pressed="false" aria-label="Switch to dark mode">
       <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
       <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
     </button>
-    <a class="btn primary small" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging">Talk to us</a>
+    <a class="btn primary small" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">Ask for a demo</a>
   </div>
 </header>
 
 <main id="main">
 <section class="hero" id="top">
-  <p class="kicker">Zyvor AI Labs · Medical imaging</p>
-  <h1>Every study.<br /><em>In focus.</em></h1>
-  <p class="lede"><strong>Archive, review and report on your infrastructure.</strong> A research viewer built for evaluation — with DICOM, DICOMweb and a scanner gateway you control.</p>
-  <div class="cta"><a class="btn primary" href="#see">See it in action</a><a class="btn" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20Mac%20evaluation">Ask for a Mac evaluation</a></div>
+  <p class="kicker hero-rise">Zyvor AI Labs · Medical imaging</p>
+  <h1 class="hero-rise">Every study.<br /><em>In focus.</em></h1>
+  <p class="lede hero-rise"><strong>Archive, review and report on your infrastructure.</strong> A research viewer built for evaluation — with DICOM, DICOMweb and a scanner gateway you control.</p>
+  <div class="cta hero-rise"><a class="btn primary" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">Ask for a demo</a><a class="btn" href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Download for Mac / Windows</a></div>
   <ul class="chips" aria-label="Status">
     <li class="ok">Engineering release</li><li>Self-hosted</li><li class="warn">Synthetic data only</li><li class="warn">Not for diagnostic use</li>
   </ul>
   <div class="window" role="group" aria-label="Screenshot of Zyvor Imaging overview (synthetic data)"><div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
     <img class="only-light" src="shots/hero-light.jpg" alt="Zyvor Imaging overview: study counts and recent imports (synthetic data)" width="1200" height="750" fetchpriority="high" decoding="async"><img class="only-dark" src="shots/hero-dark.jpg" alt="Zyvor Imaging overview in dark mode (synthetic data)" width="1200" height="750" loading="lazy" decoding="async"></div>
-  <p class="foot">Screenshots are from the running app with synthetic data.</p>
+  <p class="foot hero-rise">Screenshots are from the running app with synthetic data.</p>
+</section>
+
+<section id="try" class="tint">
+  <div class="center"><p class="kicker">Try it</p><h2>Two ways to evaluate.</h2><p class="sub">Synthetic data only. Passwords are never published on this site — sales sends hosted-demo logins privately.</p></div>
+  <picture class="pic rv"><img class="only-light" src="assets/install-light.svg" alt="Laptop install: Docker Desktop, download zip, double-click, open browser" loading="lazy"><img class="only-dark" src="assets/install-dark.svg" alt="Laptop install: Docker Desktop, download zip, double-click, open browser" loading="lazy"></picture>
+  <div class="paths">
+    <article class="path rv">
+      <p class="path-n">1</p>
+      <h3>Hosted demo</h3>
+      <p>Open a browser. Sign in with credentials sales sends. Nothing installs on your laptop.</p>
+      <a class="btn primary" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">Ask for a demo</a>
+    </article>
+    <article class="path rv">
+      <p class="path-n">2</p>
+      <h3>Install on your laptop</h3>
+      <ol class="steps">
+        <li class="step rv"><span>Install Docker Desktop once and start it.</span></li>
+        <li class="step rv"><span>Download the binary evaluation zip from Releases (not “Source code”).</span></li>
+        <li class="step rv"><span>Double-click the Mac or Windows installer. Browser opens on loopback with DEMO-LOGIN.txt.</span></li>
+      </ol>
+      <a class="btn" href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Download binary zip</a>
+    </article>
+  </div>
 </section>
 
 <section class="band" aria-label="At a glance">
@@ -115,11 +138,11 @@
 </section>
 
 <section id="deploy">
-  <div class="center"><p class="kicker">Deploy</p><h2>Run it where your studies live.</h2></div>
-  <picture class="pic"><img class="only-light" src="assets/deploy-light.svg" alt="Deploy with Compose, Helm or k3s" loading="lazy"><img class="only-dark" src="assets/deploy-dark.svg" alt="Deploy with Compose, Helm or k3s" loading="lazy"></picture>
+  <div class="center"><p class="kicker">Deploy</p><h2>Run it where your studies live.</h2><p class="sub">Doctors start with the binary zip. IT can also pull the image or run a cluster edge.</p></div>
+  <picture class="pic rv"><img class="only-light" src="assets/deploy-light.svg" alt="Deploy: laptop zip, Compose or Helm, k3s edge" loading="lazy"><img class="only-dark" src="assets/deploy-dark.svg" alt="Deploy: laptop zip, Compose or Helm, k3s edge" loading="lazy"></picture>
   <div class="grid">
-    <div class="card rv"><h3>Mac laptop</h3><p>One command via FluxVM or Docker Desktop — credentials, six synthetic studies, browser open on loopback.</p></div>
-    <div class="card rv"><h3>Windows laptop</h3><p>One command with Docker Desktop (WSL2) — same seeded archive and private login file on loopback.</p></div>
+    <div class="card rv"><h3>Laptop zip</h3><p>Docker Desktop once, then double-click Mac or Windows installer — seeded synthetic studies on loopback. No GitHub token.</p></div>
+    <div class="card rv"><h3>Registry pull</h3><p>IT can pull the published GHCR image when the package is public, or use FluxVM on Apple silicon.</p></div>
     <div class="card rv"><h3>Your k3s / k8s</h3><p>One command on your cluster: NodePort token login, or full Envoy + Keycloak HTTPS edge — both auto-seed synthetic studies.</p></div>
   </div>
 </section>
@@ -137,8 +160,8 @@
   <div class="center"><p class="kicker">FAQ</p><h2>Straight answers.</h2></div>
   <div class="faq">
     <details class="rv"><summary>Is this for diagnosis?</summary><p>No. The browser viewer is a research viewer for evaluation. It is not a certified diagnostic workstation.</p></details>
-    <details class="rv"><summary>Where does the software live?</summary><p>The product repository is private. This site is the public marketing surface — screenshots, claims and contact only.</p></details>
-    <details class="rv"><summary>How do we evaluate?</summary><p>Ask about an evaluation. Recipients get Mac (FluxVM or Docker), Windows (Docker Desktop), and/or k3s/Kubernetes one-command installs — each boots a seeded archive with synthetic studies.</p></details>
+    <details class="rv"><summary>Where does the software live?</summary><p>The product repository is private. This site is the public marketing surface and hosts <a href="https://github.com/zyvorai/zyvor-imaging-site/releases">binary evaluation releases</a> — screenshots, claims, contact, and the binary zip. No application source.</p></details>
+    <details class="rv"><summary>How do we evaluate?</summary><p>Ask sales for a <strong>hosted demo</strong> (browser only, no install) or download the <strong>binary zip</strong> from <a href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Releases</a> (Docker Desktop + double-click installer; ignore automatic “Source code” archives). IT can also run k3s/Kubernetes. Passwords are never published here — sales sends logins privately.</p></details>
     <details class="rv"><summary>Who do we contact?</summary><p><a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a> for evaluations · <a href="mailto:security@zyvor.dev">security@zyvor.dev</a> for security.</p></details>
   </div>
 </section>
@@ -147,7 +170,7 @@
   <p class="kicker">Next step</p>
   <h2>See it with your team.</h2>
   <p class="sub">Evaluations use synthetic data on infrastructure you approve.</p>
-  <div class="cta"><a class="btn primary" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20evaluation">Ask about an evaluation</a></div>
+  <div class="cta"><a class="btn primary" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">Ask for a demo</a><a class="btn" href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Download binary zip</a></div>
 </section>
 </main>
 

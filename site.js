@@ -1,6 +1,7 @@
-// Theme toggle, scroll-spy, screenshot gallery. No dependencies.
+// Theme toggle, scroll-spy, screenshot gallery, reveal motion. No dependencies.
 (function () {
   var root = document.documentElement;
+  root.classList.add("js-rv");
   var KEY = (window.__zyvoraTheme || {}).key || "zyvor-imaging-site-theme";
   var btn = document.getElementById("theme");
 
@@ -85,6 +86,10 @@
       if (el) io.observe(el);
     });
   }
+
+  [].forEach.call(document.querySelectorAll(".steps .step"), function (el, i) {
+    el.style.setProperty("--i", String(i));
+  });
 
   if ("IntersectionObserver" in window) {
     var rio = new IntersectionObserver(function (entries) {
