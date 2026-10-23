@@ -21,7 +21,7 @@
 <meta name="twitter:title" content="Zyvor Imaging · Every study. In focus.">
 <meta name="twitter:description" content="Archive, review and report — research evaluation release.">
 <meta name="twitter:image" content="https://zyvorai.github.io/zyvor-imaging-site/assets/og.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Zyvor Imaging","applicationCategory":"HealthApplication","operatingSystem":"Linux, containers, Kubernetes","description":"Medical imaging archive, research viewer, reporting workspace, scanner gateway and HealthOS adapter. Engineering release; not for diagnostic use.","publisher":{"@type":"Organization","name":"Zyvor AI Labs"},"url":"https://zyvorai.github.io/zyvor-imaging-site/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Zyvor Imaging","applicationCategory":"HealthApplication","operatingSystem":"macOS (Docker Desktop), Linux, containers, Kubernetes","description":"Medical imaging archive, research viewer, reporting workspace, scanner gateway and HealthOS adapter. Engineering release; not for diagnostic use.","publisher":{"@type":"Organization","name":"Zyvor AI Labs"},"url":"https://zyvorai.github.io/zyvor-imaging-site/"}</script>
 <script>window.__zyvoraTheme={key:"zyvor-imaging-site-theme"}</script>
 <script src="theme.js"></script>
 <link rel="stylesheet" href="site.css">
@@ -51,7 +51,7 @@
   <p class="kicker">Zyvor AI Labs · Medical imaging</p>
   <h1>Every study.<br /><em>In focus.</em></h1>
   <p class="lede"><strong>Archive, review and report on your infrastructure.</strong> A research viewer built for evaluation — with DICOM, DICOMweb and a scanner gateway you control.</p>
-  <div class="cta"><a class="btn primary" href="#see">See it in action</a><a class="btn" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20evaluation">Ask about an evaluation</a></div>
+  <div class="cta"><a class="btn primary" href="#see">See it in action</a><a class="btn" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20Mac%20evaluation">Ask for a Mac evaluation</a></div>
   <ul class="chips" aria-label="Status">
     <li class="ok">Engineering release</li><li>Self-hosted</li><li class="warn">Synthetic data only</li><li class="warn">Not for diagnostic use</li>
   </ul>
@@ -118,8 +118,8 @@
   <div class="center"><p class="kicker">Deploy</p><h2>Run it where your studies live.</h2></div>
   <picture class="pic"><img class="only-light" src="assets/deploy-light.svg" alt="Deploy with Compose, Helm or k3s" loading="lazy"><img class="only-dark" src="assets/deploy-dark.svg" alt="Deploy with Compose, Helm or k3s" loading="lazy"></picture>
   <div class="grid">
-    <div class="card rv"><h3>Compose</h3><p>One container for a laptop evaluation. Bootstrap private credentials; never commit them.</p></div>
-    <div class="card rv"><h3>Helm</h3><p>Local SQLite/PVC profile or shared PostgreSQL + S3. NetworkPolicy profiles included.</p></div>
+    <div class="card rv"><h3>Mac laptop</h3><p>Evaluation package: one command with Docker Desktop — credentials, six synthetic studies, browser open. Full running state on loopback.</p></div>
+    <div class="card rv"><h3>Compose / Helm</h3><p>Compose for any laptop; Helm for local PVC or shared PostgreSQL + S3 with NetworkPolicy profiles.</p></div>
     <div class="card rv"><h3>k3s edge</h3><p>Image import, Helm apply, optional Envoy Gateway + Keycloak for HTTPS organisation sign-in.</p></div>
   </div>
 </section>
@@ -138,7 +138,7 @@
   <div class="faq">
     <details class="rv"><summary>Is this for diagnosis?</summary><p>No. The browser viewer is a research viewer for evaluation. It is not a certified diagnostic workstation.</p></details>
     <details class="rv"><summary>Where does the software live?</summary><p>The product repository is private. This site is the public marketing surface — screenshots, claims and contact only.</p></details>
-    <details class="rv"><summary>How do we evaluate?</summary><p>Ask about an evaluation. We can arrange a controlled demo with synthetic data on infrastructure you approve.</p></details>
+    <details class="rv"><summary>How do we evaluate?</summary><p>Ask about an evaluation. Recipients get a Mac one-command installer (Docker Desktop) that boots a seeded archive with synthetic studies — or a controlled demo on infrastructure you approve.</p></details>
     <details class="rv"><summary>Who do we contact?</summary><p><a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a> for evaluations · <a href="mailto:security@zyvor.dev">security@zyvor.dev</a> for security.</p></details>
   </div>
 </section>
