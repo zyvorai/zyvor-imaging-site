@@ -5,9 +5,13 @@ The public website for **Zyvor Imaging**, Zyvor AI Labs' medical imaging archive
 This repository holds:
 
 - The built marketing site (HTML, CSS, JavaScript, graphics, synthetic-data screenshots)
-- **Binary evaluation releases** (zip + notes) — no application source (`imaging/`, `web/`)
+- **Evaluation releases** (Mac DMG + binary zip + notes) — no application source (`imaging/`, `web/`)
 
-Site files are generated from the private product repository and are not edited by hand here. Binary zips are attached under [Releases](https://github.com/zyvorai/zyvor-imaging-site/releases) — use the `zyvor-imaging-binary-*.zip` asset, not GitHub’s automatic “Source code” links.
+Site files are generated from the private product repository and are not edited by hand here. Downloads are under [Releases](https://github.com/zyvorai/zyvor-imaging-site/releases):
+
+- **Mac doctors:** `Zyvor-Imaging-*.dmg` — open → drag to Applications → sign in with the password sales emails you
+- **Windows / offline laptop:** `zyvor-imaging-binary-*.zip` — Docker Desktop + double-click installer
+- Ignore GitHub’s automatic “Source code” links
 
 Container image: `ghcr.io/zyvorai/zyvor-imaging` (OCI source linked to this repo).
 

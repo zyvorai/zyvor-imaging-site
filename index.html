@@ -21,7 +21,7 @@
 <meta name="twitter:title" content="Zyvor Imaging · Every study. In focus.">
 <meta name="twitter:description" content="Archive, review and report — research evaluation release.">
 <meta name="twitter:image" content="https://zyvorai.github.io/zyvor-imaging-site/assets/og.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Zyvor Imaging","applicationCategory":"HealthApplication","operatingSystem":"macOS, Windows (Docker Desktop), Linux, containers, Kubernetes","description":"Medical imaging archive, research viewer, reporting workspace, scanner gateway and HealthOS adapter. Engineering release; not for diagnostic use.","publisher":{"@type":"Organization","name":"Zyvor AI Labs"},"url":"https://zyvorai.github.io/zyvor-imaging-site/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Zyvor Imaging","applicationCategory":"HealthApplication","operatingSystem":"macOS (native DMG), Windows (Docker Desktop), Linux, containers, Kubernetes","description":"Medical imaging archive, research viewer, reporting workspace, scanner gateway and HealthOS adapter. Engineering release; not for diagnostic use.","publisher":{"@type":"Organization","name":"Zyvor AI Labs"},"url":"https://zyvorai.github.io/zyvor-imaging-site/","downloadUrl":"https://github.com/zyvorai/zyvor-imaging-site/releases/latest"}</script>
 <script>window.__zyvoraTheme={key:"zyvor-imaging-site-theme"}</script>
 <script src="theme.js"></script>
 <link rel="stylesheet" href="site.css">
@@ -51,7 +51,7 @@
   <p class="kicker hero-rise">Zyvor AI Labs · Medical imaging</p>
   <h1 class="hero-rise">Every study.<br /><em>In focus.</em></h1>
   <p class="lede hero-rise"><strong>Archive, review and report on your infrastructure.</strong> A research viewer built for evaluation — with DICOM, DICOMweb and a scanner gateway you control.</p>
-  <div class="cta hero-rise"><a class="btn primary" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">Ask for a demo</a><a class="btn" href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Download for Mac / Windows</a></div>
+  <div class="cta hero-rise"><a class="btn primary" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">Ask for a demo</a><a class="btn" href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Download for Mac</a></div>
   <ul class="chips" aria-label="Status">
     <li class="ok">Engineering release</li><li>Self-hosted</li><li class="warn">Synthetic data only</li><li class="warn">Not for diagnostic use</li>
   </ul>
@@ -61,25 +61,45 @@
 </section>
 
 <section id="try" class="tint">
-  <div class="center"><p class="kicker">Try it</p><h2>Two ways to evaluate.</h2><p class="sub">Synthetic data only. Passwords are never published on this site — sales sends hosted-demo logins privately.</p></div>
-  <picture class="pic rv"><img class="only-light" src="assets/install-light.svg" alt="Laptop install: Docker Desktop, download zip, double-click, open browser" loading="lazy"><img class="only-dark" src="assets/install-dark.svg" alt="Laptop install: Docker Desktop, download zip, double-click, open browser" loading="lazy"></picture>
-  <div class="paths">
+  <div class="center"><p class="kicker">Try it</p><h2>Easy enough for a busy clinic day.</h2><p class="sub">Synthetic data only. Passwords are never published here — sales emails you a Base URL and login privately.</p></div>
+  <picture class="pic rv"><img class="only-light" src="assets/install-light.svg" alt="Mac install: download DMG, drag to Applications, open, sign in" loading="lazy"><img class="only-dark" src="assets/install-dark.svg" alt="Mac install: download DMG, drag to Applications, open, sign in" loading="lazy"></picture>
+  <div class="paths paths-3">
     <article class="path rv">
       <p class="path-n">1</p>
       <h3>Hosted demo</h3>
-      <p>Open a browser. Sign in with credentials sales sends. Nothing installs on your laptop.</p>
+      <p>Email sales. Open the link they send. Sign in. Nothing installs on your laptop.</p>
       <a class="btn primary" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">Ask for a demo</a>
     </article>
     <article class="path rv">
       <p class="path-n">2</p>
-      <h3>Install on your laptop</h3>
+      <h3>Mac app (DMG)</h3>
+      <ol class="steps">
+        <li class="step rv"><span>Download <strong>Zyvor-Imaging-*.dmg</strong> from Releases (not “Source code”).</span></li>
+        <li class="step rv"><span>Open the disk image → drag <strong>Zyvor Imaging</strong> into <strong>Applications</strong>.</span></li>
+        <li class="step rv"><span>Open the app → paste the Base URL sales sent → sign in with username + password.</span></li>
+      </ol>
+      <a class="btn" href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Download Mac DMG</a>
+    </article>
+    <article class="path rv">
+      <p class="path-n">3</p>
+      <h3>Windows / offline laptop</h3>
       <ol class="steps">
         <li class="step rv"><span>Install Docker Desktop once and start it.</span></li>
-        <li class="step rv"><span>Download the binary evaluation zip from Releases (not “Source code”).</span></li>
-        <li class="step rv"><span>Double-click the Mac or Windows installer. Browser opens on loopback with DEMO-LOGIN.txt.</span></li>
+        <li class="step rv"><span>Download the <strong>binary zip</strong> (not “Source code”).</span></li>
+        <li class="step rv"><span>Double-click the Mac or Windows installer. Browser opens; credentials are in DEMO-LOGIN.txt.</span></li>
       </ol>
       <a class="btn" href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Download binary zip</a>
     </article>
+  </div>
+  <div class="howto rv">
+    <h3>How to test (five minutes)</h3>
+    <ol class="steps">
+      <li class="step rv"><span>Sign in — you should land on Overview with sample study counts.</span></li>
+      <li class="step rv"><span>Open <strong>Worklist</strong> → click any synthetic study.</span></li>
+      <li class="step rv"><span>Open the <strong>research viewer</strong> — window/level a slice (not for diagnosis).</span></li>
+      <li class="step rv"><span>Optional: draft a short report if your role allows (radiologist / admin).</span></li>
+    </ol>
+    <p class="howto-note">Stuck? Email <a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a> — we will walk you through it.</p>
   </div>
 </section>
 
@@ -138,10 +158,10 @@
 </section>
 
 <section id="deploy">
-  <div class="center"><p class="kicker">Deploy</p><h2>Run it where your studies live.</h2><p class="sub">Doctors start with the binary zip. IT can also pull the image or run a cluster edge.</p></div>
-  <picture class="pic rv"><img class="only-light" src="assets/deploy-light.svg" alt="Deploy: laptop zip, Compose or Helm, k3s edge" loading="lazy"><img class="only-dark" src="assets/deploy-dark.svg" alt="Deploy: laptop zip, Compose or Helm, k3s edge" loading="lazy"></picture>
+  <div class="center"><p class="kicker">Deploy</p><h2>Run it where your studies live.</h2><p class="sub">Doctors start with the Mac DMG or a hosted demo. IT can run the binary zip, pull the image, or stand up a cluster edge.</p></div>
+  <picture class="pic rv"><img class="only-light" src="assets/deploy-light.svg" alt="Deploy: Mac DMG, laptop zip, Compose or Helm, k3s edge" loading="lazy"><img class="only-dark" src="assets/deploy-dark.svg" alt="Deploy: Mac DMG, laptop zip, Compose or Helm, k3s edge" loading="lazy"></picture>
   <div class="grid">
-    <div class="card rv"><h3>Laptop zip</h3><p>Docker Desktop once, then double-click Mac or Windows installer — seeded synthetic studies on loopback. No GitHub token.</p></div>
+    <div class="card rv"><h3>Mac DMG / laptop zip</h3><p>Drag the notarized Mac app into Applications, or use Docker Desktop once with the air-gap zip — seeded synthetic studies. No GitHub token.</p></div>
     <div class="card rv"><h3>Registry pull</h3><p>IT can pull the published GHCR image when the package is public, or use FluxVM on Apple silicon.</p></div>
     <div class="card rv"><h3>Your k3s / k8s</h3><p>One command on your cluster: NodePort token login, or full Envoy + Keycloak HTTPS edge — both auto-seed synthetic studies.</p></div>
   </div>
@@ -160,8 +180,9 @@
   <div class="center"><p class="kicker">FAQ</p><h2>Straight answers.</h2></div>
   <div class="faq">
     <details class="rv"><summary>Is this for diagnosis?</summary><p>No. The browser viewer is a research viewer for evaluation. It is not a certified diagnostic workstation.</p></details>
-    <details class="rv"><summary>Where does the software live?</summary><p>The product repository is private. This site is the public marketing surface and hosts <a href="https://github.com/zyvorai/zyvor-imaging-site/releases">binary evaluation releases</a> — screenshots, claims, contact, and the binary zip. No application source.</p></details>
-    <details class="rv"><summary>How do we evaluate?</summary><p>Ask sales for a <strong>hosted demo</strong> (browser only, no install) or download the <strong>binary zip</strong> from <a href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Releases</a> (Docker Desktop + double-click installer; ignore automatic “Source code” archives). IT can also run k3s/Kubernetes. Passwords are never published here — sales sends logins privately.</p></details>
+    <details class="rv"><summary>Where does the software live?</summary><p>The product repository is private. This site is the public marketing surface and hosts <a href="https://github.com/zyvorai/zyvor-imaging-site/releases">evaluation releases</a> — Mac DMG, binary zip, screenshots, and contact. No application source.</p></details>
+    <details class="rv"><summary>How do we evaluate?</summary><p>Ask sales for a <strong>hosted demo</strong> (browser only), download the <strong>Mac DMG</strong> (drag to Applications), or use the <strong>binary zip</strong> (Docker Desktop + double-click installer). Ignore automatic “Source code” archives. Passwords are never published here — sales sends logins privately.</p></details>
+    <details class="rv"><summary>I am a doctor — what do I click?</summary><p><strong>Fastest:</strong> email sales for a hosted link. <strong>On a Mac:</strong> download the DMG → drag Zyvor Imaging into Applications → open → paste the Base URL and password from the sales email. <strong>Then test:</strong> Worklist → open a study → research viewer. Synthetic data only; not for diagnosis.</p></details>
     <details class="rv"><summary>Who do we contact?</summary><p><a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a> for evaluations · <a href="mailto:security@zyvor.dev">security@zyvor.dev</a> for security.</p></details>
   </div>
 </section>
@@ -170,7 +191,7 @@
   <p class="kicker">Next step</p>
   <h2>See it with your team.</h2>
   <p class="sub">Evaluations use synthetic data on infrastructure you approve.</p>
-  <div class="cta"><a class="btn primary" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">Ask for a demo</a><a class="btn" href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Download binary zip</a></div>
+  <div class="cta"><a class="btn primary" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">Ask for a demo</a><a class="btn" href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Download Mac DMG</a></div>
 </section>
 </main>
 
