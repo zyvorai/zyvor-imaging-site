@@ -35,7 +35,7 @@
     <span>ZYVOR IMAGING</span>
   </a>
   <nav id="sections" aria-label="Sections">
-    <a href="#try">Try</a><a href="#see">See it</a><a href="#capabilities">Capabilities</a><a href="#security">Security</a><a href="#deploy">Deploy</a><a href="#honest">Honest limits</a><a href="#faq">FAQ</a>
+    <a href="#try">Try it</a><a href="#see">See it</a><a href="#new">What's new</a><a href="#capabilities">Capabilities</a><a href="#security">Security</a><a href="#deploy">Deploy</a><a href="#honest">Honest limits</a><a href="#faq">FAQ</a>
   </nav>
   <div class="bar-actions">
     <button id="theme" class="icon" type="button" aria-pressed="false" aria-label="Switch to dark mode">
@@ -50,8 +50,8 @@
 <section class="hero" id="top">
   <p class="kicker hero-rise">Zyvor AI Labs · Medical imaging</p>
   <h1 class="hero-rise">Every study.<br /><em>In focus.</em></h1>
-  <p class="lede hero-rise"><strong>Archive, review and report on your infrastructure.</strong> A research viewer built for evaluation — with DICOM, DICOMweb and a scanner gateway you control.</p>
-  <div class="cta hero-rise"><a class="btn primary" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">Ask for a demo</a><a class="btn" href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Download for Mac</a></div>
+  <p class="lede hero-rise"><strong>Archive, review and report on your infrastructure.</strong> A research viewer built for evaluation. You do not need to be technical to try it: open a link, or drag one app into Applications, and look at made-up patients.</p>
+  <div class="cta hero-rise"><a class="btn primary" href="#try">Try it in 2 minutes</a><a class="btn" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">Ask for a demo link</a></div>
   <ul class="chips" aria-label="Status">
     <li class="ok">Engineering release</li><li>Self-hosted</li><li class="warn">Synthetic data only</li><li class="warn">Not for diagnostic use</li>
   </ul>
@@ -61,45 +61,93 @@
 </section>
 
 <section id="try" class="tint">
-  <div class="center"><p class="kicker">Try it</p><h2>Easy enough for a busy clinic day.</h2><p class="sub">Synthetic data only. Passwords are never published here — sales emails you a Base URL and login privately.</p></div>
-  <picture class="pic rv"><img class="only-light" src="assets/install-light.svg" alt="Mac install: download DMG, drag to Applications, open, sign in" loading="lazy"><img class="only-dark" src="assets/install-dark.svg" alt="Mac install: download DMG, drag to Applications, open, sign in" loading="lazy"></picture>
+  <div class="center"><p class="kicker">Try it</p><h2>Test it today. No technical skills needed.</h2><p class="sub">Pick the way that suits you. Every option uses made-up (synthetic) patients, never real ones.</p></div>
+
+  <div class="callout rv" role="note">
+    <h3>Before you start</h3>
+    <ul>
+      <li><strong>Only synthetic data.</strong> Please do not load real patient images into an evaluation.</li>
+      <li><strong>Not for diagnosis.</strong> The viewer is for research and evaluation.</li>
+      <li><strong>Your login arrives by email.</strong> Passwords are never put on this page. Ask for it below.</li>
+    </ul>
+  </div>
+
   <div class="paths paths-3">
     <article class="path rv">
       <p class="path-n">1</p>
-      <h3>Hosted demo</h3>
-      <p>Email sales. Open the link they send. Sign in. Nothing installs on your laptop.</p>
-      <a class="btn primary" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">Ask for a demo</a>
+      <p class="eta">Easiest · about 2 minutes · nothing to install</p>
+      <h3>Open a demo link</h3>
+      <ol class="steps">
+        <li class="step rv"><span>Email us with the button below. We send a web link, a username and a password.</span></li>
+        <li class="step rv"><span>Open the link in Chrome, Safari or Edge and sign in.</span></li>
+        <li class="step rv"><span>You land on the Overview. Go to the checklist below.</span></li>
+      </ol>
+      <a class="btn primary" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access&amp;body=Hello%2C%20please%20send%20me%20a%20demo%20link%20and%20login.%20My%20role%20is%3A%20(doctor%20%2F%20technologist%20%2F%20IT)">Ask for a demo link</a>
     </article>
     <article class="path rv">
       <p class="path-n">2</p>
-      <h3>Mac app (DMG)</h3>
+      <p class="eta">On a Mac · about 5 minutes</p>
+      <h3>Mac app</h3>
       <ol class="steps">
-        <li class="step rv"><span>Download <strong>Zyvor-Imaging-*.dmg</strong> from Releases (not “Source code”).</span></li>
-        <li class="step rv"><span>Open the disk image → drag <strong>Zyvor Imaging</strong> into <strong>Applications</strong>.</span></li>
-        <li class="step rv"><span>Open the app → paste the Base URL sales sent → sign in with username + password.</span></li>
+        <li class="step rv"><span>Download <strong>Zyvor-Imaging-0.2.0.dmg</strong> from the page that opens. Pick the DMG, not “Source code”.</span></li>
+        <li class="step rv"><span>Open it and drag <strong>Zyvor Imaging</strong> onto <strong>Applications</strong>.</span></li>
+        <li class="step rv"><span>Open the app. Paste the web address from our email and sign in.</span></li>
       </ol>
-      <a class="btn" href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Download Mac DMG</a>
+      <a class="btn" href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Download the Mac app</a>
     </article>
     <article class="path rv">
       <p class="path-n">3</p>
-      <h3>Windows / offline laptop</h3>
+      <p class="eta">Windows or no internet · about 15 minutes the first time</p>
+      <h3>Run it on your own PC</h3>
       <ol class="steps">
-        <li class="step rv"><span>Install Docker Desktop once and start it.</span></li>
-        <li class="step rv"><span>Download the <strong>binary zip</strong> (not “Source code”).</span></li>
-        <li class="step rv"><span>Double-click the Mac or Windows installer. Browser opens; credentials are in DEMO-LOGIN.txt.</span></li>
+        <li class="step rv"><span>Install <strong>Docker Desktop</strong> once, then start it and wait until it says it is running.</span></li>
+        <li class="step rv"><span>Download the <strong>binary zip</strong> and unzip it.</span></li>
+        <li class="step rv"><span>Double-click the installer for your computer. Your browser opens by itself; the login is in the file <strong>DEMO-LOGIN.txt</strong>.</span></li>
       </ol>
-      <a class="btn" href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Download binary zip</a>
+      <a class="btn" href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Download the zip</a>
     </article>
   </div>
+
   <div class="howto rv">
-    <h3>How to test (five minutes)</h3>
-    <ol class="steps">
-      <li class="step rv"><span>Sign in — you should land on Overview with sample study counts.</span></li>
-      <li class="step rv"><span>Open <strong>Worklist</strong> → click any synthetic study.</span></li>
-      <li class="step rv"><span>Open the <strong>research viewer</strong> — window/level a slice (not for diagnosis).</span></li>
-      <li class="step rv"><span>Optional: draft a short report if your role allows (radiologist / admin).</span></li>
-    </ol>
-    <p class="howto-note">Stuck? Email <a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a> — we will walk you through it.</p>
+    <h3>Your 10-minute test</h3>
+    <p class="howto-note">Tick them off as you go. Items marked <span class="tag new">Newer build</span> need a build newer than the current 0.2.0 download; ask which version your demo link runs.</p>
+    <div class="checks">
+      <section>
+        <h4>Look around · 3 minutes</h4>
+        <ol class="steps">
+          <li class="step"><span>On <strong>Overview</strong>, see the study counts and the tiles that say what needs attention.</span></li>
+          <li class="step"><span>Open <strong>Study worklist</strong>. Try the search box, then switch between the list and the picture grid.</span></li>
+          <li class="step"><span>Click a study. In the viewer, scroll through the images and drag to change brightness (window/level).</span></li>
+        </ol>
+      </section>
+      <section>
+        <h4>Try the safety features · 4 minutes</h4>
+        <ol class="steps">
+          <li class="step"><span>Find a small amber badge such as <strong>1 check</strong> or <strong>name differs</strong> on the worklist and click it. <span class="tag new">Newer build</span></span></li>
+          <li class="step"><span>In the study view, read the <strong>Image checks</strong> panel and the <strong>Prior studies</strong> list. Does it tell you what you would expect? <span class="tag new">Newer build</span></span></li>
+          <li class="step"><span>If your role allows it (radiologist or admin), press <strong>De-identified…</strong>, read the preview, and download the pseudonymised copy. <span class="tag new">Newer build</span></span></li>
+        </ol>
+      </section>
+      <section>
+        <h4>Tell us · 3 minutes</h4>
+        <ol class="steps">
+          <li class="step"><span>If your role allows it, type a short draft report and save it.</span></li>
+          <li class="step"><span>Write down anything that confused you, was slow, or that you expected and did not find.</span></li>
+          <li class="step"><span>Send it to us. Short and honest is perfect.</span></li>
+        </ol>
+        <a class="btn primary" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20evaluation%20feedback&amp;body=What%20I%20tried%3A%0A%0AWhat%20confused%20me%3A%0A%0AWhat%20I%20expected%20and%20did%20not%20find%3A%0A%0AMy%20role%20(doctor%20%2F%20technologist%20%2F%20IT)%3A">Send feedback</a>
+      </section>
+    </div>
+  </div>
+
+  <div class="faq help rv">
+    <h3>Something not working?</h3>
+    <details><summary>The Mac says the app cannot be opened</summary><p>Right-click (or Control-click) the app and choose <strong>Open</strong>, then confirm. You only need to do this the first time.</p></details>
+    <details><summary>Docker says it is not running</summary><p>Open Docker Desktop and wait until the status says it is running (this can take a minute). Then double-click the installer again.</p></details>
+    <details><summary>My browser did not open by itself</summary><p>Open your browser and go to <strong>http://127.0.0.1:8080</strong>. That address is only your own computer.</p></details>
+    <details><summary>I do not know my login</summary><p>If you used the zip, open <strong>DEMO-LOGIN.txt</strong> in the unzipped folder. For a demo link, reply to our email and we will resend it.</p></details>
+    <details><summary>The page is blank or stuck</summary><p>Reload the page, or try another browser (Chrome, Safari or Edge). If it is still stuck, tell us what you clicked last.</p></details>
+    <details><summary>I would rather have someone walk me through it</summary><p>Of course. Email <a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a> and we will book ten minutes.</p></details>
   </div>
 </section>
 
@@ -121,11 +169,19 @@
 </section>
 
 <section id="see" class="tint">
-  <div class="center"><p class="kicker">See it</p><h2>Real screens, synthetic studies.</h2><p class="sub">Captured from the running application. Every name and number shown is synthetic.</p></div>
+  <div class="center"><p class="kicker">See it</p><h2>Real screens, synthetic studies.</h2><p class="sub">Captured from the running application. Every name and number shown is synthetic. Screens marked newer build are not in the 0.2.0 download yet.</p></div>
   <div class="controls">
-    <div class="seg" role="radiogroup" aria-label="Screen" data-key="view">
+    <div class="seg wrap" role="radiogroup" aria-label="Screen" data-key="view">
       <button type="button" role="radio" aria-checked="true" data-value="overview">Overview</button>
       <button type="button" role="radio" aria-checked="false" data-value="worklist">Worklist</button>
+      <button type="button" role="radio" aria-checked="false" data-value="grid">Picture grid</button>
+      <button type="button" role="radio" aria-checked="false" data-value="orders">Orders</button>
+      <button type="button" role="radio" aria-checked="false" data-value="priors">Prior studies</button>
+      <button type="button" role="radio" aria-checked="false" data-value="identity">Wrong patient</button>
+      <button type="button" role="radio" aria-checked="false" data-value="analysis">Image checks</button>
+      <button type="button" role="radio" aria-checked="false" data-value="deid">De-identified export</button>
+      <button type="button" role="radio" aria-checked="false" data-value="cohort">Pick several</button>
+      <button type="button" role="radio" aria-checked="false" data-value="audit">Audit trail</button>
       <button type="button" role="radio" aria-checked="false" data-value="studio">Image studio</button>
     </div>
     <div class="seg" role="radiogroup" aria-label="Appearance" data-key="mode">
@@ -133,7 +189,20 @@
       <button type="button" role="radio" aria-checked="false" data-value="dark">Dark</button>
     </div>
   </div>
-  <figure class="shot"><img id="shot" src="shots/light-overview.jpg" alt="Zyvor Imaging: overview, light appearance, synthetic data" width="1440" height="900" loading="lazy"><figcaption id="shot-cap">Overview · light · synthetic data</figcaption></figure>
+  <figure class="shot"><img id="shot" src="shots/light-overview.jpg" alt="Zyvor Imaging: overview, light appearance, synthetic data" width="1440" height="900" loading="lazy"><figcaption id="shot-cap">Overview · light · synthetic data</figcaption><p id="shot-note" class="shot-note"></p></figure>
+  <div class="motion rv"><h3>In motion</h3><p class="sub">A short tour: the picture grid, a name-differs badge that jumps to prior studies, the de-identified export preview, search and image checks.</p><img src="shots/tour.gif" alt="Short animated tour of the worklist, prior studies, de-identified export and image checks (synthetic data)" width="760" loading="lazy"></div>
+</section>
+
+<section id="new">
+  <div class="center"><p class="kicker">What's new</p><h2>Safer sharing, fewer surprises.</h2><p class="sub">In the current development build. The 0.2.0 download does not include these yet; ask which version your demo runs.</p></div>
+  <div class="grid">
+    <div class="card rv"><span class="tag new">Newer build</span><h3>Wrong-patient radar</h3><p>A patient ID filed under two different names gets a badge and a warning above the images. One click shows every prior study of that patient.</p></div>
+    <div class="card rv"><span class="tag new">Newer build</span><h3>Image checks</h3><p>Plain-language technical checks for CT, MR and X-ray (missing slices, noise, over-exposure) and a warning when text looks burned into the picture. Checks, not diagnoses.</p></div>
+    <div class="card rv"><span class="tag new">Newer build</span><h3>De-identified export</h3><p>Preview, then download a pseudonymised copy for research. One study or a hand-picked group. It checks for leftover names and identifiers, and it refuses pictures with burned-in text unless you confirm. Not a certified de-identification.</p></div>
+    <div class="card rv"><span class="tag new">Newer build</span><h3>Pick, filter, find</h3><p>Filter by date and tag, tick several studies, and see thumbnails. A "name differs" filter lists every ID with more than one name.</p></div>
+    <div class="card rv"><span class="tag new">Newer build</span><h3>Optional AI helpers</h3><p>Off by default. If your IT team runs a private model, you can search in plain words ("unread CT from this week"), find similar studies, and get a draft wording of your own notes. Suggestions only: you check and insert them, and they are labelled.</p></div>
+    <div class="card rv"><span class="tag new">Newer build</span><h3>Mac app</h3><p>Prior studies, the wrong-patient banner, listed-study export and the optional AI helpers on the Mac too.</p></div>
+  </div>
 </section>
 
 <section id="capabilities">
@@ -183,6 +252,10 @@
     <details class="rv"><summary>Where does the software live?</summary><p>The product repository is private. This site is the public marketing surface and hosts <a href="https://github.com/zyvorai/zyvor-imaging-site/releases">evaluation releases</a> — Mac DMG, binary zip, screenshots, and contact. No application source.</p></details>
     <details class="rv"><summary>How do we evaluate?</summary><p>Ask sales for a <strong>hosted demo</strong> (browser only), download the <strong>Mac DMG</strong> (drag to Applications), or use the <strong>binary zip</strong> (Docker Desktop + double-click installer). Ignore automatic “Source code” archives. Passwords are never published here — sales sends logins privately.</p></details>
     <details class="rv"><summary>I am a doctor — what do I click?</summary><p><strong>Fastest:</strong> email sales for a hosted link. <strong>On a Mac:</strong> download the DMG → drag Zyvor Imaging into Applications → open → paste the Base URL and password from the sales email. <strong>Then test:</strong> Worklist → open a study → research viewer. Synthetic data only; not for diagnosis.</p></details>
+    <details class="rv"><summary>Do I have to install anything?</summary><p>Not for the demo link: it opens in your browser. The Mac app is a normal drag-to-Applications install. Only the "run it on my own PC" option needs Docker Desktop, once.</p></details>
+    <details class="rv"><summary>Can I try it with my own patients' images?</summary><p>Please do not. This is an engineering release tested with synthetic data. Use the sample studies, or ask us for more synthetic ones.</p></details>
+    <details class="rv"><summary>What do the AI features do, and are they on?</summary><p>They are off unless your IT team connects a model they run. They help with search and wording, never with diagnosis, and nothing is saved until you press Insert. See the product documentation we send with your evaluation.</p></details>
+    <details class="rv"><summary>How do I give feedback?</summary><p>Use the "Send feedback" button in the test checklist, or email <a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a>. Tell us what confused you; that is the most useful thing.</p></details>
     <details class="rv"><summary>Who do we contact?</summary><p><a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a> for evaluations · <a href="mailto:security@zyvor.dev">security@zyvor.dev</a> for security.</p></details>
   </div>
 </section>
@@ -191,7 +264,7 @@
   <p class="kicker">Next step</p>
   <h2>See it with your team.</h2>
   <p class="sub">Evaluations use synthetic data on infrastructure you approve.</p>
-  <div class="cta"><a class="btn primary" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">Ask for a demo</a><a class="btn" href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Download Mac DMG</a></div>
+  <div class="cta"><a class="btn primary" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">Ask for a demo link</a><a class="btn" href="#try">See how to try it</a></div>
 </section>
 </main>
 
