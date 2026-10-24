@@ -1,0 +1,40 @@
+name: Evaluation feedback
+description: Tell us what confused you, what was slow, or what you expected and did not find.
+labels: [feedback]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Zyvor Imaging is an engineering release for **synthetic data only**. **Never include patient data, real images or credentials** in this form.
+  - type: dropdown
+    id: role
+    attributes:
+      label: Your role
+      options: [Doctor, Technologist, IT, Other]
+    validations: { required: true }
+  - type: textarea
+    id: tried
+    attributes:
+      label: What did you try?
+    validations: { required: true }
+  - type: textarea
+    id: confused
+    attributes:
+      label: What confused you, or was slow?
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect and not find?
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Shown in the Mac app, or ask us which version your demo link runs.
+      placeholder: "0.3.1"
+  - type: checkboxes
+    id: safe
+    attributes:
+      label: Safe to share
+      options:
+        - label: I have not included patient data, real images or credentials.
+          required: true

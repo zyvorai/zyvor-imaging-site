@@ -1,0 +1,38 @@
+name: Something does not work
+description: The install, the app or the website is not behaving as described.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check [Troubleshooting](https://github.com/zyvorai/zyvor-imaging-site/blob/main/docs/TROUBLESHOOTING.md) first. Zyvor Imaging is an engineering release for **synthetic data only**. **Never include patient data, real images or credentials.**
+  - type: dropdown
+    id: path
+    attributes:
+      label: How are you running it?
+      options: [Hosted demo link, Mac app (DMG), "Laptop zip (Docker Desktop)", Container image or cluster, The website]
+    validations: { required: true }
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: "0.3.1"
+    validations: { required: true }
+  - type: input
+    id: os
+    attributes:
+      label: Computer and operating system
+      placeholder: "MacBook Air, macOS 26 / Windows 11"
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened?
+      description: What you did, what you saw, and what you expected.
+    validations: { required: true }
+  - type: checkboxes
+    id: safe
+    attributes:
+      label: Safe to share
+      options:
+        - label: I have not included patient data, real images or credentials.
+          required: true
