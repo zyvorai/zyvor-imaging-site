@@ -8,11 +8,7 @@
 
 **A medical imaging archive, research viewer and reporting workspace that runs on your own infrastructure.**
 
-[![Latest release](https://img.shields.io/github/v/release/zyvorai/zyvor-imaging-site?label=latest&color=0a84ff&labelColor=1d1d1f)](https://github.com/zyvorai/zyvor-imaging-site/releases/latest)
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fzyvorai.github.io%2Fzyvor-imaging-site%2F&label=website&labelColor=1d1d1f&up_color=0a84ff)](https://zyvorai.github.io/zyvor-imaging-site/)
-[![Data](https://img.shields.io/badge/data-synthetic%20only-30d158?labelColor=1d1d1f)](docs/INTENDED-USE.md)
-[![Use](https://img.shields.io/badge/diagnostic%20use-not%20for-ff9f0a?labelColor=1d1d1f)](docs/INTENDED-USE.md)
-[![Status](https://img.shields.io/badge/status-engineering%20release-0a84ff?labelColor=1d1d1f)](docs/INTENDED-USE.md)
+[![Latest release](https://img.shields.io/github/v/release/zyvorai/zyvor-imaging-site?label=latest&color=0a84ff&labelColor=1d1d1f)](https://github.com/zyvorai/zyvor-imaging-site/releases/latest) [![Website](https://img.shields.io/website?url=https%3A%2F%2Fzyvorai.github.io%2Fzyvor-imaging-site%2F&label=website&labelColor=1d1d1f&up_color=0a84ff)](https://zyvorai.github.io/zyvor-imaging-site/) [![Data](https://img.shields.io/badge/data-synthetic%20only-30d158?labelColor=1d1d1f)](docs/INTENDED-USE.md) [![Use](https://img.shields.io/badge/diagnostic%20use-not%20for-ff9f0a?labelColor=1d1d1f)](docs/INTENDED-USE.md) [![Status](https://img.shields.io/badge/status-engineering%20release-0a84ff?labelColor=1d1d1f)](docs/INTENDED-USE.md)
 
 [**Try it in 2 minutes**](#try-it) · [**See it**](#see-it) · [**What you get**](#what-you-get) · [**Docs**](docs/README.md) · [**Releases**](https://github.com/zyvorai/zyvor-imaging-site/releases) · [**Ask for a demo**](mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access)
 
