@@ -27,12 +27,12 @@
     worklist: "Search, filter and open studies. Badges flag image checks and patient IDs filed under two names.",
     grid: "The same worklist as pictures, with priority colours and tags.",
     orders: "Scheduled scans offered to the scanner; status comes back automatically.",
-    priors: "Everything else filed under the same patient ID. Newer build.",
-    identity: "A warning above the images when the same ID appears under another name. Newer build.",
-    analysis: "Technical findings next to the viewer, clearly labelled as not a diagnosis. Newer build.",
-    deid: "Preview what is removed, shifted and remapped, then download a pseudonymised copy. Newer build.",
-    cohort: "Tick several studies and export them together. Newer build.",
-    audit: "A tamper-evident record of who did what, filterable to de-identified exports. Newer build.",
+    priors: "Everything else filed under the same patient ID.",
+    identity: "A warning above the images when the same ID appears under another name.",
+    analysis: "Technical findings next to the viewer, clearly labelled as not a diagnosis.",
+    deid: "Preview what is removed, shifted and remapped, then download a pseudonymised copy.",
+    cohort: "Tick several studies and export them together.",
+    audit: "A tamper-evident record of who did what, filterable to de-identified exports.",
     studio: "The research viewer. Not for diagnostic use."
   };
   // these captures exist in dark chrome only
