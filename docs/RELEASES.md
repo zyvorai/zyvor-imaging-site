@@ -17,9 +17,12 @@ The files are on the [GitHub Releases page](https://github.com/zyvorai/zyvor-ima
 
 | Version | Release | Notes |
 |---|---|---|
-| **0.3.1** (latest) | [v0.3.1-binary.1](https://github.com/zyvorai/zyvor-imaging-site/releases/tag/v0.3.1-binary.1) | Security and robustness patch. No new features. **Replaces 0.3.0 for everyone.** |
+| **0.3.2** (latest) | [v0.3.2-binary.1](https://github.com/zyvorai/zyvor-imaging-site/releases/tag/v0.3.2-binary.1) | The runtime image no longer carries readable application source or internal release tooling. Behaviour is unchanged. linux/amd64 image only; the Mac app (DMG) is carried over from 0.3.1. **Replaces 0.3.1 and 0.3.0.** |
+| 0.3.1 | [v0.3.1-binary.1](https://github.com/zyvorai/zyvor-imaging-site/releases/tag/v0.3.1-binary.1) | Security and robustness patch. No new features. **Replaces 0.3.0 for everyone.** |
 | 0.3.0 | [v0.3.0-binary.1](https://github.com/zyvorai/zyvor-imaging-site/releases/tag/v0.3.0-binary.1) | Mac app and binary evaluation: wrong-patient radar, image checks, de-identified export, filters, optional AI helpers. |
 | 0.2.0 | [v0.2.0-binary.1](https://github.com/zyvorai/zyvor-imaging-site/releases/tag/v0.2.0-binary.1) | First Mac app and binary evaluation. |
+
+The container images and evaluation zips for 0.3.0 and 0.3.1, and the 0.2.0 and earlier images, were withdrawn when 0.3.2 replaced them. Their release pages remain for the notes.
 
 What changed in each: [What's new](WHATS-NEW.md).
 
