@@ -7,6 +7,7 @@ These pages are written for people evaluating Zyvor Imaging: doctors, technologi
 | Start here | |
 |---|---|
 | [Getting started](GETTING-STARTED.md) | Three ways to try it, and a 10-minute test checklist |
+| [Tutorials](tutorials/README.md) | Install, the research viewer and segmenting, with recorded animations |
 | [Troubleshooting](TROUBLESHOOTING.md) | Fixes for the things that go wrong on a first try |
 | [FAQ](FAQ.md) | Diagnosis, installs, your own images, AI features, contact |
 

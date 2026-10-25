@@ -128,6 +128,7 @@ Sessions are hashed, mutations are origin-checked, the audit trail is recorded, 
 | | |
 |---|---|
 | [Getting started](docs/GETTING-STARTED.md) | The three ways to try it, and your 10-minute test checklist |
+| [Tutorials](docs/tutorials/README.md) | Install, the research viewer and segmenting, with recorded animations |
 | [Troubleshooting](docs/TROUBLESHOOTING.md) | The Mac says the app cannot be opened, Docker is not running, and similar |
 | [FAQ](docs/FAQ.md) | Straight answers: diagnosis, installs, AI features, your own images |
 | [Intended use and limits](docs/INTENDED-USE.md) | What this is and is not |
