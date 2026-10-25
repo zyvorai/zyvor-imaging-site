@@ -2,6 +2,10 @@
 
 **Engineering release · Synthetic data only · Not for diagnostic use.**
 
+## 0.4.2: the live demo shows how to sign in
+
+Image only (`ghcr.io/zyvorai/zyvor-imaging:0.4.2`). The sign-in page of the [live demo](https://demo.zyvor.dev) now shows its read-only login with a button that fills it in, so nobody has to look for it.
+
 ## 0.4.1: polish, and a live demo
 
 Image only (`ghcr.io/zyvorai/zyvor-imaging:0.4.1`); the Mac app and zip stay at 0.4.0.

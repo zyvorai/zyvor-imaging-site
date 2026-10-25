@@ -14,7 +14,7 @@ You will start the real application on your own computer with made-up studies, s
    docker run --rm -p 8080:8080 \
      -e IMAGING_SEED_DEMO=true -e IMAGING_SECURE_COOKIE=false \
      -e IMAGING_USERS='{"admin":{"token":"PASSWORD","role":"admin"}}' \
-     ghcr.io/zyvorai/zyvor-imaging:0.4.1
+     ghcr.io/zyvorai/zyvor-imaging:0.4.2
    ```
 
    On Windows PowerShell, put the three settings in a file called `demo.env` (one `NAME=value` per line, `IMAGING_USERS` on one line) and use `--env-file demo.env` instead of the `-e` options.

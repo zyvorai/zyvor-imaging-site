@@ -33,7 +33,7 @@ Pick the way that suits you. Every option uses **synthetic (made-up) patients**,
 | **2** | **Mac app** | about 5 min | Download **`Zyvor-Imaging-*.dmg`** from the [latest release](https://github.com/zyvorai/zyvor-imaging-site/releases/latest) (not "Source code"), drag it into **Applications**, open it, paste the web address from our email and sign in. |
 | **3** | **Run it on your own PC** | about 15 min the first time | Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) once, download the **binary zip**, unzip it and double-click the installer for your computer. The login is in `DEMO-LOGIN.txt`. |
 | **4** | **Live demo in one command** | about 2 min once Docker Desktop is running | On the [website's live demo section](https://zyvorai.github.io/zyvor-imaging-site/#live) the page writes one command and a fresh password for you, in your browser. Paste it into a terminal, open `http://127.0.0.1:8080` and sign in. Made-up studies only, including the phantom the viewer uses. |
-| **5** | **Hosted demo, no install** | about 1 min | Open [demo.zyvor.dev:8443](https://demo.zyvor.dev:8443) and sign in as `viewer` with the password on the [website's live demo section](https://zyvorai.github.io/zyvor-imaging-site/#live). A shared, read-only copy with made-up studies; it resets every night. |
+| **5** | **Hosted demo, no install** | about 1 min | Open [demo.zyvor.dev](https://demo.zyvor.dev) and press **Fill in the demo login** on the sign-in page (the login is also on the [website's live demo section](https://zyvorai.github.io/zyvor-imaging-site/#live)). A shared, read-only copy with made-up studies; it resets every night. |
 
 Step by step, with the 10-minute test checklist: **[Getting started](docs/GETTING-STARTED.md)** · Stuck? **[Troubleshooting](docs/TROUBLESHOOTING.md)**
 
@@ -135,7 +135,7 @@ Sessions are hashed, mutations are origin-checked, the audit trail is recorded, 
 | [Intended use and limits](docs/INTENDED-USE.md) | What this is and is not |
 | [Security overview](docs/SECURITY-OVERVIEW.md) | The controls you can point at, and what is out of scope |
 | [Releases](docs/RELEASES.md) | What is in each evaluation release, and how to verify a download |
-| [What's new](docs/WHATS-NEW.md) | Changes from 0.2.0 to 0.4.1 |
+| [What's new](docs/WHATS-NEW.md) | Changes from 0.2.0 to 0.4.2 |
 | [Gallery](docs/GALLERY.md) | Every screen, light and dark |
 
 ## Feedback and contact
