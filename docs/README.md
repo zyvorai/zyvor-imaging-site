@@ -14,7 +14,8 @@ These pages are written for people evaluating Zyvor Imaging: doctors, technologi
 |---|---|
 | [Intended use and limits](INTENDED-USE.md) | What this is, and what it is not |
 | [Security overview](SECURITY-OVERVIEW.md) | Controls you can point at, and what is out of scope |
-| [What's new](WHATS-NEW.md) | Changes from 0.2.0 to 0.3.1 |
+| [What's new](WHATS-NEW.md) | Changes from 0.2.0 to 0.3.1, and what is coming |
+| [The advanced research viewer](VIEWER.md) | MPR, 3D, stacks, measurements and segments in the development build, and what has and has not been checked |
 | [Gallery](GALLERY.md) | Every screen, light and dark |
 
 | Download | |

@@ -2,6 +2,15 @@
 
 **Engineering release · Synthetic data only · Not for diagnostic use.**
 
+## Coming: the advanced research viewer (development build, not yet released)
+
+Not in the 0.3.2 download. See [The advanced research viewer](VIEWER.md) for what it does and what has not been checked.
+
+- MPR with a shared crosshair and tiltable planes; 3D volume rendering and projections with a clip box.
+- Several series side by side with hanging protocols and scrolling linked by position.
+- Measurements and segments that are saved with the series, and DICOM Segmentation and Structured Report output.
+- Still a research viewer, synthetic data only, not for diagnostic use.
+
 ## 0.3.1: security and robustness patch
 
 0.3.1 has **no new features** compared with 0.3.0 and **replaces it for everyone.**
