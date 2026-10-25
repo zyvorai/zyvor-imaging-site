@@ -135,7 +135,7 @@ Sessions are hashed, mutations are origin-checked, the audit trail is recorded, 
 | [Intended use and limits](docs/INTENDED-USE.md) | What this is and is not |
 | [Security overview](docs/SECURITY-OVERVIEW.md) | The controls you can point at, and what is out of scope |
 | [Releases](docs/RELEASES.md) | What is in each evaluation release, and how to verify a download |
-| [What's new](docs/WHATS-NEW.md) | Changes from 0.2.0 to 0.4.0 |
+| [What's new](docs/WHATS-NEW.md) | Changes from 0.2.0 to 0.4.1 |
 | [Gallery](docs/GALLERY.md) | Every screen, light and dark |
 
 ## Feedback and contact

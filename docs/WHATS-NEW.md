@@ -2,6 +2,14 @@
 
 **Engineering release · Synthetic data only · Not for diagnostic use.**
 
+## 0.4.1: polish, and a live demo
+
+Image only (`ghcr.io/zyvorai/zyvor-imaging:0.4.1`); the Mac app and zip stay at 0.4.0.
+
+- No error on the sign-in page, three sample orders in the demo, and the image scrolls into view on short windows.
+- A **shared live demo** you can open in a browser: [demo.zyvor.dev:8443](https://demo.zyvor.dev:8443), read-only, made-up studies, reset every night. The login is on the [website](https://zyvorai.github.io/zyvor-imaging-site/#live).
+- Three [tutorials](tutorials/README.md) with recorded animations.
+
 ## 0.4.0: the advanced research viewer
 
 New in 0.4.0; not in 0.3.2. See [The advanced research viewer](VIEWER.md) for what it does and what has not been checked.
