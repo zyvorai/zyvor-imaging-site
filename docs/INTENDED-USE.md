@@ -13,7 +13,7 @@ Zyvor Imaging is an **engineering / evaluation release.** This page says plainly
 
 | It is not | Meaning |
 |---|---|
-| A diagnostic workstation | The viewer is a research viewer (the downloadable release is 2D; an MPR / 3D research viewer is in the development build, see [The advanced research viewer](VIEWER.md)). It is **not validated for diagnostic decisions.** There is no MPR or 3D diagnostic workstation claim. |
+| A diagnostic workstation | The viewer is a research viewer (from 0.4.0 it includes an MPR / 3D research viewer, see [The advanced research viewer](VIEWER.md)). It is **not validated for diagnostic decisions.** There is no MPR or 3D diagnostic workstation claim. |
 | A certified medical product | There is **no clinical validation and no regulatory certification claim** (for example HIPAA, MDR or FDA). |
 | A certified de-identification | The de-identified export is a pseudonymised research copy with leak checks. It is **not a certified de-identification.** |
 | An AI diagnosis tool | The optional AI helpers are off by default, assist with search and wording only, and never diagnose. Automatic analysis is limited to **technical image checks**. |

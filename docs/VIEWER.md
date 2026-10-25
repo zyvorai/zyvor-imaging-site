@@ -1,8 +1,8 @@
 # The advanced research viewer
 
-**Development build · Synthetic data only · Not for diagnostic use.**
+**Synthetic data only · Not for diagnostic use.**
 
-This page describes the MPR / 3D viewer that Zyvor is building into Zyvor Imaging. It is **not in the 0.3.2 evaluation release you can download today**; it is in the development build and will arrive in a later release. It is a **research viewer for evaluation**: it has not been validated for display, measurement or diagnosis, and nothing here is a claim that it is better than, or equal to, any other viewer.
+This page describes the MPR / 3D viewer in Zyvor Imaging **0.4.0** and later. It is not in 0.3.2 or earlier. It is a **research viewer for evaluation**: it has not been validated for display, measurement or diagnosis, and nothing here is a claim that it is better than, or equal to, any other viewer.
 
 ## What it does
 
@@ -13,6 +13,18 @@ This page describes the MPR / 3D viewer that Zyvor is building into Zyvor Imagin
 - **Segments.** Start from a click (everything connected, or everything in a value range), then refine with a brush, an eraser, fill holes and smoothing, with undo. Volume and Hounsfield statistics are listed. Segments are saved with the series and rebuilt from the pixels each time.
 - **DICOM output.** Download or store a DICOM Segmentation object and a DICOM Structured Report of the measurements and segments. Segmentation objects made elsewhere (binary or 8-bit fractional) can be stored and are drawn over the images.
 - **Our own decoders.** Images in common compressed formats (JPEG, JPEG-LS, JPEG 2000 and High-Throughput JPEG 2000) are decoded in the browser by code written for this product.
+
+## Five things to try
+
+1. **Open the phantom.** Worklist, search `SYN-VOL`, open the study, press **MPR / 3D**.
+2. **Find the sphere.** Click the bright ball in the axial view; the other two planes follow the crosshair.
+3. **Tilt the planes.** Type `30` into the Tilt boxes, then press **Reset**.
+4. **Grow a segment.** Press `g` and click the ball; then `x` to erase, `h` to fill holes, `z` to undo.
+5. **Go 3D.** Open the **3D** tab, drag to rotate, press `1` to `4` for presets and move the clip sliders.
+
+![MPR on a made-up phantom](../media/viewer-mpr.jpg)
+
+![3D rendering with a coloured segment](../media/viewer-3d.jpg)
 
 ## How it was checked
 

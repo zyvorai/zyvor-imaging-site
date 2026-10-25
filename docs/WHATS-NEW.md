@@ -2,9 +2,9 @@
 
 **Engineering release · Synthetic data only · Not for diagnostic use.**
 
-## Coming: the advanced research viewer (development build, not yet released)
+## 0.4.0: the advanced research viewer
 
-Not in the 0.3.2 download. See [The advanced research viewer](VIEWER.md) for what it does and what has not been checked.
+New in 0.4.0; not in 0.3.2. See [The advanced research viewer](VIEWER.md) for what it does and what has not been checked.
 
 - MPR with a shared crosshair and tiltable planes; 3D volume rendering and projections with a clip box.
 - Several series side by side with hanging protocols and scrolling linked by position.

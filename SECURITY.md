@@ -15,7 +15,7 @@ There is no application source in this repository, so reports about source code 
 
 ## Supported versions
 
-Security fixes ship in the newest evaluation release. **0.3.2 replaces 0.3.1 and 0.3.0 for everyone.** Check the [latest release](https://github.com/zyvorai/zyvor-imaging-site/releases/latest).
+Security fixes ship in the newest evaluation release. **Use 0.4.0 or later; 0.3.1 and earlier are withdrawn.** Check the [latest release](https://github.com/zyvorai/zyvor-imaging-site/releases/latest).
 
 ## What to expect
 
