@@ -196,7 +196,7 @@
     (window.crypto || window.msCrypto).getRandomValues(bytes);
     var pw = "demo" + Array.prototype.map.call(bytes, function (b) { return "abcdefghijkmnpqrstuvwxyz23456789".charAt(b % 32); }).join("");
     var users = '{"admin":{"token":"' + pw + '","role":"admin"}}';
-    var IMAGE = "ghcr.io/zyvorai/zyvor-imaging:0.4.0";
+    var IMAGE = "ghcr.io/zyvorai/zyvor-imaging:0.4.1";
     var TEXT = {
       unix: "docker run --rm -p 8080:8080 -e IMAGING_SEED_DEMO=true -e IMAGING_SECURE_COOKIE=false -e IMAGING_USERS='" + users + "' " + IMAGE,
       win: "@'\nIMAGING_USERS=" + users + "\nIMAGING_SEED_DEMO=true\nIMAGING_SECURE_COOKIE=false\n'@ | Set-Content -Encoding ascii demo.env\ndocker run --rm -p 8080:8080 --env-file demo.env " + IMAGE
