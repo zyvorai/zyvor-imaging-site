@@ -16,6 +16,10 @@
 2. Open the link in Chrome, Safari or Edge and sign in.
 3. You land on the Overview. Go to [your 10-minute test](#your-10-minute-test).
 
+### Live demo in one command (about 2 minutes once Docker Desktop is running)
+
+If you have [Docker Desktop](https://www.docker.com/products/docker-desktop/) running, the [live demo section of the website](https://zyvorai.github.io/zyvor-imaging-site/#live) writes one command and a fresh password for you, in your browser (it is not sent anywhere). Paste the command into a terminal, open `http://127.0.0.1:8080`, and sign in as **admin** with that password. It starts the real application with made-up studies, including the phantom volume the research viewer uses; stop it with Ctrl+C. Then try the five things in [The advanced research viewer](VIEWER.md#five-things-to-try).
+
 ### 2. Mac app (about 5 minutes)
 
 1. Open the [latest release](https://github.com/zyvorai/zyvor-imaging-site/releases/latest) and download **`Zyvor-Imaging-<version>.dmg`**. Pick the DMG, **not** "Source code".

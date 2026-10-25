@@ -30,7 +30,7 @@ body:
     attributes:
       label: Version
       description: Shown in the Mac app, or ask us which version your demo link runs.
-      placeholder: "0.3.1"
+      placeholder: "0.4.0"
   - type: checkboxes
     id: safe
     attributes:

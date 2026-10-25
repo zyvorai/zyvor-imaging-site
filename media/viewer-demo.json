@@ -1,0 +1,41 @@
+{
+ "chapters": [
+  {
+   "t": 1.1,
+   "label": "Open any series from the worklist"
+  },
+  {
+   "t": 3.4,
+   "label": "MPR / 3D: one button, your own viewer"
+  },
+  {
+   "t": 5.3,
+   "label": "Three linked planes, one crosshair"
+  },
+  {
+   "t": 8.2,
+   "label": "Tilt all three planes together"
+  },
+  {
+   "t": 11.7,
+   "label": "One click grows a segment"
+  },
+  {
+   "t": 13.2,
+   "label": "Brush, eraser, fill holes, smooth, undo"
+  },
+  {
+   "t": 16.6,
+   "label": "3D volume rendering: your segment in colour"
+  },
+  {
+   "t": 20.5,
+   "label": "Volume, MIP, presets, a clip box"
+  },
+  {
+   "t": 26.3,
+   "label": "Research use only. Synthetic data only."
+  }
+ ],
+ "seconds": 28.8
+}

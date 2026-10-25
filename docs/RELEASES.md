@@ -17,7 +17,8 @@ The files are on the [GitHub Releases page](https://github.com/zyvorai/zyvor-ima
 
 | Version | Release | Notes |
 |---|---|---|
-| **0.3.2** (latest) | [v0.3.2-binary.1](https://github.com/zyvorai/zyvor-imaging-site/releases/tag/v0.3.2-binary.1) | The runtime image no longer carries readable application source or internal release tooling. Behaviour is unchanged. linux/amd64 image only; the Mac app (DMG) is carried over from 0.3.1. **Replaces 0.3.1 and 0.3.0.** |
+| **0.4.0** (latest) | [v0.4.0-binary.1](https://github.com/zyvorai/zyvor-imaging-site/releases/tag/v0.4.0-binary.1) | The advanced research viewer (MPR, 3D, stacks), saved measurements and segments, and DICOM Segmentation and Structured Report output. See [The advanced research viewer](VIEWER.md). Research use only. |
+| 0.3.2 | [v0.3.2-binary.1](https://github.com/zyvorai/zyvor-imaging-site/releases/tag/v0.3.2-binary.1) | The runtime image no longer carries readable application source or internal release tooling. Behaviour is unchanged. linux/amd64 image only; the Mac app (DMG) is carried over from 0.3.1. Replaced 0.3.1 and 0.3.0. |
 | 0.3.1 | [v0.3.1-binary.1](https://github.com/zyvorai/zyvor-imaging-site/releases/tag/v0.3.1-binary.1) | Security and robustness patch. No new features. **Replaces 0.3.0 for everyone.** |
 | 0.3.0 | [v0.3.0-binary.1](https://github.com/zyvorai/zyvor-imaging-site/releases/tag/v0.3.0-binary.1) | Mac app and binary evaluation: wrong-patient radar, image checks, de-identified export, filters, optional AI helpers. |
 | 0.2.0 | [v0.2.0-binary.1](https://github.com/zyvorai/zyvor-imaging-site/releases/tag/v0.2.0-binary.1) | First Mac app and binary evaluation. |

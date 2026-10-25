@@ -116,3 +116,113 @@
     [].forEach.call(document.querySelectorAll(".rv"), function (el) { el.classList.add("in"); });
   }
 })();
+// ---- 0.4.0: hero reel, tour chapters, viewer tabs, one-line live demo command, scroll progress ----
+(function () {
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Hero recording: pause on request (and always when the page is not visible), tilt a little with the pointer.
+  var reel = document.getElementById("reel"), toggle = document.getElementById("reel-toggle"), rw = document.getElementById("reel-window");
+  if (reel && toggle) {
+    if (reduce) { reel.removeAttribute("autoplay"); reel.pause(); toggle.textContent = "Play"; toggle.setAttribute("aria-label", "Play the recording"); toggle.setAttribute("aria-pressed", "true"); }
+    toggle.addEventListener("click", function () {
+      if (reel.paused) { reel.play(); toggle.textContent = "Pause"; toggle.setAttribute("aria-pressed", "false"); toggle.setAttribute("aria-label", "Pause the recording"); }
+      else { reel.pause(); toggle.textContent = "Play"; toggle.setAttribute("aria-pressed", "true"); toggle.setAttribute("aria-label", "Play the recording"); }
+    });
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (!e.isIntersecting) reel.pause(); else if (toggle.getAttribute("aria-pressed") === "false") reel.play().catch(function () {}); });
+      }, { threshold: 0.2 }).observe(reel);
+    }
+  }
+  if (rw && !reduce && window.matchMedia && window.matchMedia("(hover:hover)").matches) {
+    rw.addEventListener("pointermove", function (e) {
+      var r = rw.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+      rw.style.setProperty("--rx", (x * 5).toFixed(2)); rw.style.setProperty("--ry", (-y * 4).toFixed(2)); rw.style.setProperty("--tilt", x.toFixed(2));
+    });
+    rw.addEventListener("pointerleave", function () { rw.style.setProperty("--rx", "0"); rw.style.setProperty("--ry", "0"); rw.style.setProperty("--tilt", "-1"); });
+  }
+
+  // Tour with chapters.
+  var tour = document.getElementById("tour");
+  var chapters = [].slice.call(document.querySelectorAll(".chapters button"));
+  if (tour && chapters.length) {
+    chapters.forEach(function (b) {
+      b.addEventListener("click", function () { tour.currentTime = parseFloat(b.getAttribute("data-t")); tour.play().catch(function () {}); });
+    });
+    tour.addEventListener("timeupdate", function () {
+      var t = tour.currentTime, current = null;
+      chapters.forEach(function (b) { if (parseFloat(b.getAttribute("data-t")) <= t + 0.05) current = b; b.removeAttribute("aria-current"); });
+      if (current) current.setAttribute("aria-current", "true");
+    });
+  }
+
+  // Viewer showcase tabs.
+  var SHOTS = {
+    mpr: ["media/viewer-mpr.jpg", "MPR · made-up phantom", "Axial, coronal and sagittal planes with a shared crosshair. Click or drag to move it; scroll to step through a plane.", "MPR: three linked planes through the phantom's sphere"],
+    tilt: ["media/viewer-tilt.jpg", "Tilted planes · made-up phantom", "All three planes tilted together about the patient axes. The crosshair stays where it is in the patient; Reset goes back to the standard planes.", "The three planes tilted together"],
+    segment: ["media/viewer-segment.jpg", "Segment and edit · made-up phantom", "One click grows a segment. A brush, an eraser, fill holes, smoothing and undo refine it; it is saved with the series and rebuilt from the pixels.", "A grown and edited segment drawn over the planes"],
+    "3d": ["media/viewer-3d.jpg", "3D volume rendering · made-up phantom", "Volume rendering with your segment in colour (the red ball). Drag to rotate, wheel to zoom, 1-4 for presets.", "3D volume rendering of the phantom with a coloured segment"],
+    clip: ["media/viewer-clip.jpg", "Clip box · made-up phantom", "Six sliders cut the volume on each axis. The same picture comes from WebGPU, WebGL2 and a slow reference renderer used in the tests.", "3D view with part of the volume clipped away"]
+  };
+  var tabs = document.getElementById("vtabs"), vshot = document.getElementById("vshot"), vcap = document.getElementById("vshot-cap"), vnote = document.getElementById("vshot-note");
+  if (tabs && vshot) {
+    var radios = [].slice.call(tabs.querySelectorAll('[role="radio"]'));
+    var select = function (b, focus) {
+      var d = SHOTS[b.getAttribute("data-value")];
+      radios.forEach(function (r) { var on = r === b; r.setAttribute("aria-checked", on ? "true" : "false"); r.tabIndex = on ? 0 : -1; });
+      vshot.classList.add("swap");
+      var pre = new Image();
+      pre.onload = pre.onerror = function () { vshot.src = d[0]; vshot.alt = d[3]; vshot.classList.remove("swap"); };
+      pre.src = d[0];
+      vcap.textContent = d[1]; vnote.textContent = d[2];
+      if (focus) b.focus();
+    };
+    radios.forEach(function (b, i) {
+      b.tabIndex = i === 0 ? 0 : -1;
+      b.addEventListener("click", function () { select(b); });
+      b.addEventListener("keydown", function (e) {
+        var n = { ArrowRight: i + 1, ArrowDown: i + 1, ArrowLeft: i - 1, ArrowUp: i - 1, Home: 0, End: radios.length - 1 }[e.key];
+        if (n === undefined) return;
+        e.preventDefault(); select(radios[(n + radios.length) % radios.length], true);
+      });
+    });
+  }
+
+  // The one-line live demo: a fresh password is made here, in the browser, and goes nowhere else.
+  var cmd = document.getElementById("cmd"), copy = document.getElementById("cmd-copy");
+  if (cmd) {
+    // The server wants a password of at least 32 characters; 36 random ones come from the browser's own generator.
+    var bytes = new Uint8Array(36);
+    (window.crypto || window.msCrypto).getRandomValues(bytes);
+    var pw = "demo" + Array.prototype.map.call(bytes, function (b) { return "abcdefghijkmnpqrstuvwxyz23456789".charAt(b % 32); }).join("");
+    var users = '{"admin":{"token":"' + pw + '","role":"admin"}}';
+    var IMAGE = "ghcr.io/zyvorai/zyvor-imaging:0.4.0";
+    var TEXT = {
+      unix: "docker run --rm -p 8080:8080 -e IMAGING_SEED_DEMO=true -e IMAGING_SECURE_COOKIE=false -e IMAGING_USERS='" + users + "' " + IMAGE,
+      win: "@'\nIMAGING_USERS=" + users + "\nIMAGING_SEED_DEMO=true\nIMAGING_SECURE_COOKIE=false\n'@ | Set-Content -Encoding ascii demo.env\ndocker run --rm -p 8080:8080 --env-file demo.env " + IMAGE
+    };
+    var os = /Win/i.test(navigator.platform || navigator.userAgent || "") ? "win" : "unix";
+    var osButtons = [].slice.call(document.querySelectorAll(".cmd-tabs button"));
+    var showCmd = function () {
+      cmd.textContent = TEXT[os] + "\n\n# then open http://127.0.0.1:8080 and sign in as  admin  with the password  " + pw;
+      osButtons.forEach(function (b) { b.setAttribute("aria-checked", b.getAttribute("data-os") === os ? "true" : "false"); });
+    };
+    osButtons.forEach(function (b) { b.addEventListener("click", function () { os = b.getAttribute("data-os"); showCmd(); }); });
+    showCmd();
+    if (copy) copy.addEventListener("click", function () {
+      var done = function () { copy.textContent = "Copied"; setTimeout(function () { copy.textContent = "Copy"; }, 1800); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(TEXT[os]).then(done, function () { selectText(cmd); });
+      else selectText(cmd);
+    });
+  }
+  function selectText(node) { var r = document.createRange(); r.selectNodeContents(node); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); }
+
+  // Scroll progress.
+  if (!reduce) {
+    var bar = document.createElement("div"); bar.className = "progress"; bar.setAttribute("aria-hidden", "true"); document.body.appendChild(bar);
+    var tick = false;
+    var update = function () { var h = document.documentElement.scrollHeight - window.innerHeight; bar.style.transform = "scaleX(" + (h > 0 ? Math.min(1, window.scrollY / h) : 0).toFixed(4) + ")"; tick = false; };
+    window.addEventListener("scroll", function () { if (!tick) { tick = true; requestAnimationFrame(update); } }, { passive: true });
+    update();
+  }
+})();

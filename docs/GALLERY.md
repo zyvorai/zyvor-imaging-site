@@ -123,3 +123,17 @@ The research viewer: scroll, window/level, measure, tags.
 ![A short tour: the picture grid, a name-differs badge that jumps to prior studies, the de-identified export preview, search and image checks](../shots/tour.gif)
 
 Back to the [documentation index](README.md).
+
+## Advanced research viewer (0.4.0)
+
+Recorded from the running app on a made-up phantom. Research use only. See [The advanced research viewer](VIEWER.md).
+
+![MPR: three linked planes](../media/viewer-mpr.jpg)
+
+![The three planes tilted together](../media/viewer-tilt.jpg)
+
+![A grown and edited segment](../media/viewer-segment.jpg)
+
+![3D volume rendering with the segment in colour](../media/viewer-3d.jpg)
+
+![A clip box cutting the volume](../media/viewer-clip.jpg)
