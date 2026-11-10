@@ -2,6 +2,21 @@
 
 **Engineering release · Synthetic data only · Not for diagnostic use.**
 
+## 0.4.4: India / telerad research patterns
+
+Image only (`ghcr.io/zyvorai/zyvor-imaging:0.4.4`); the Mac app and zip stay at 0.4.0.
+
+- Referring facility on the worklist (from DICOM site tags), TAT age, report templates, and a WhatsApp/SMS-style report notify card you wire to your own webhook — research labelled, not a Meta WhatsApp product.
+- Drawn from the India PACS shortlist (Medsynapse, RADSpa, SoftLink, 5C, Nandico, and peers).
+
+## 0.4.3: research gap follow-up
+
+Image only (`ghcr.io/zyvorai/zyvor-imaging:0.4.3`); the Mac app and zip stay at 0.4.0.
+
+- Teaching packs, FHIR ImagingStudy, prior prefetch, critical-result ack, share/collab, smart scrollbar, MPEG DICOM video, GSPS overlays.
+- Research PET/CT fusion (same FoR) + SUVbw, free oblique MPR, interactive CPR with cross-cuts, MG/PT-CT hanging, CAD SR overlays, SM overview.
+- RT Dose summary JSON and measurement-tracks CSV — research labelled, not planning or diagnostic tools.
+
 ## 0.4.2: the live demo shows how to sign in
 
 Image only (`ghcr.io/zyvorai/zyvor-imaging:0.4.2`). The sign-in page of the [live demo](https://demo.zyvor.dev) now shows its read-only login with a button that fills it in, so nobody has to look for it.
@@ -38,12 +53,3 @@ New in 0.4.0; not in 0.3.2. See [The advanced research viewer](VIEWER.md) for wh
 - **Image checks** for CT, MR and radiography, plus a warning when text looks burned into the picture. Plain-language technical checks, not diagnoses.
 - **De-identified export** of one study or a hand-picked group, with leak, burned-in text (optional OCR) and free-text checks. Not a certified de-identification.
 - **Worklist** date and tag filters, multi-select and a thumbnail grid.
-- **Optional AI helpers** (off by default; they need a model your IT team runs): plain-language search, find by meaning, similar studies and a report drafting aid. Suggestions only, labelled, never inserted automatically. Tested with stub endpoints only.
-- **Mac app:** prior studies, the wrong-patient banner, listed-study export and the optional AI helpers.
-- **Mac app and binary evaluation** (DMG plus laptop zip), and the public container image.
-
-## 0.2.0: first Mac app and binary evaluation
-
-- The first Mac DMG and the first binary (Docker Desktop) zip, so evaluation no longer needs a registry token.
-
-See the [Gallery](GALLERY.md) for the screens, and [Releases](RELEASES.md) for the files.
