@@ -12,6 +12,8 @@
 
 [**Live demo**](https://demo.zyvor.dev:8443) · [**Try it in 2 minutes**](#try-it) · [**See it**](#see-it) · [**What you get**](#what-you-get) · [**Docs**](docs/README.md) · [**Releases**](https://github.com/zyvorai/zyvor-imaging-site/releases) · [**Ask for a demo**](mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access)
 
+[Client overview (PDF)](docs/Zyvor-Imaging-Client-Overview.pdf)
+
 </div>
 
 > [!IMPORTANT]
