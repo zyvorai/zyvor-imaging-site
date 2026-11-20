@@ -9,7 +9,6 @@ The files are on the [GitHub Releases page](https://github.com/zyvorai/zyvor-ima
 | File | For | What it is |
 |---|---|---|
 | `Zyvor-Imaging-<version>.dmg` | Doctors on a Mac | The Mac app. Signed with a Developer ID and notarized by Apple. Drag it into Applications. |
-| `zyvor-imaging-binary-<version>-<date>.zip` | Mac or Windows laptop, offline | The archive for Docker Desktop: the application image (`image/zyvor-imaging.tar`), a Compose file and double-click installers (`scripts/mac-install.command`, `scripts/win-install.cmd`). It needs **no registry access and no token.** |
 | `zyvor-imaging-<version>.sbom.cdx.json` | IT and security reviewers | A **CycloneDX** software bill of materials (available from 0.3.0). |
 | Container image | IT | `ghcr.io/zyvorai/zyvor-imaging:<version>` (and `latest`). Public. `linux/amd64` and `linux/arm64`. |
 

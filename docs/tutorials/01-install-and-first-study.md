@@ -4,7 +4,7 @@
 
 You will start the real application on your own computer with made-up studies, sign in, and open a study.
 
-## Option A: one command with Docker (Mac, Windows, Linux)
+## Option A: one command with Docker (Mac, Linux)
 
 1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/), start it, and wait until it says it is running.
 2. Make a password of at least 32 characters. Any long random string works; for example, in a terminal: `python3 -c "import secrets; print(secrets.token_hex(20))"` prints 40 characters.
@@ -17,7 +17,6 @@ You will start the real application on your own computer with made-up studies, s
      ghcr.io/zyvorai/zyvor-imaging:0.4.4
    ```
 
-   On Windows PowerShell, put the three settings in a file called `demo.env` (one `NAME=value` per line, `IMAGING_USERS` on one line) and use `--env-file demo.env` instead of the `-e` options.
 4. Wait about a minute. The first start pulls the image and adds the made-up studies. You are ready when <http://127.0.0.1:8080/health/ready> shows `{"status":"ready"}`.
 
 The [live demo section of the website](https://zyvorai.github.io/zyvor-imaging-site/#live) writes this command and a fresh password for you in your browser; nothing is sent anywhere.

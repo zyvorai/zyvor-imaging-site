@@ -32,8 +32,8 @@ Pick the way that suits you. Every option uses **synthetic (made-up) patients**,
 | | Path | Time | What you do |
 |---|---|---|---|
 | **1** | **Open a demo link** | about 2 min · nothing to install | [Email us](mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access). We send a web link, a username and a password. Open it in Chrome, Safari or Edge. |
-| **2** | **Mac app** | about 5 min | Download **`Zyvor-Imaging-*.dmg`** from the [latest release](https://github.com/zyvorai/zyvor-imaging-site/releases/latest) (not "Source code"), drag it into **Applications**, open it, paste the web address from our email and sign in. |
-| **3** | **Run it on your own PC** | about 15 min the first time | Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) once, download the **binary zip**, unzip it and double-click the installer for your computer. The login is in `DEMO-LOGIN.txt`. |
+| **2** | **Mac app (30-day trial)** | about 5 min | Needs a Mac with Apple silicon and macOS 15 or later. Download **`Zyvor-Imaging-*.dmg`** from the [latest release](https://github.com/zyvorai/zyvor-imaging-site/releases/latest) (not "Source code"), drag it into **Applications**, open it, paste the web address from our email and sign in. For a free 30-day trial key, email [sales@zyvor.dev](mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20trial) and paste it under **Licence…**; the app keeps working without one. |
+| **3** | **Run the archive on this Mac** | about 15 min the first time | Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) once, then use the one-command start in option 4 below. There is no Windows version. |
 | **4** | **Live demo in one command** | about 2 min once Docker Desktop is running | On the [website's live demo section](https://zyvorai.github.io/zyvor-imaging-site/#live) the page writes one command and a fresh password for you, in your browser. Paste it into a terminal, open `http://127.0.0.1:8080` and sign in. Made-up studies only, including the phantom the viewer uses. |
 | **5** | **Hosted demo, no install** | about 1 min | Open [demo.zyvor.dev](https://demo.zyvor.dev) and press **Fill in the demo login** on the sign-in page (the login is also on the [website's live demo section](https://zyvorai.github.io/zyvor-imaging-site/#live)). A shared, read-only copy with made-up studies; it resets every night. |
 
@@ -108,7 +108,6 @@ More: **[What's new](docs/WHATS-NEW.md)**.
 | **Live demo** | Anyone | Browser only. Open [demo.zyvor.dev:8443](https://demo.zyvor.dev:8443) and sign in as `viewer` (password on the [website](https://zyvorai.github.io/zyvor-imaging-site/#live)). Shared, read-only, synthetic data, resets nightly. |
 | **Private hosted demo** | Your team | Browser only, with your own login. Ask [sales](mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access). |
 | **Mac app (DMG)** | Doctors on a Mac | Signed and notarized. Drag to Applications. |
-| **Laptop zip** | Mac or Windows, offline | Docker Desktop once, then a double-click installer. Carries the image, so no registry access or token is needed. |
 | **Registry image** | IT | `ghcr.io/zyvorai/zyvor-imaging`, public, `linux/amd64` and `linux/arm64`. |
 | **Your cluster** | IT | Compose, Helm, or one command on k3s/Kubernetes (NodePort token login, or an Envoy + Keycloak HTTPS edge). Both auto-seed synthetic studies. |
 

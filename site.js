@@ -198,10 +198,9 @@
     var users = '{"admin":{"token":"' + pw + '","role":"admin"}}';
     var IMAGE = "ghcr.io/zyvorai/zyvor-imaging:0.4.4";
     var TEXT = {
-      unix: "docker run --rm -p 8080:8080 -e IMAGING_SEED_DEMO=true -e IMAGING_SECURE_COOKIE=false -e IMAGING_USERS='" + users + "' " + IMAGE,
-      win: "@'\nIMAGING_USERS=" + users + "\nIMAGING_SEED_DEMO=true\nIMAGING_SECURE_COOKIE=false\n'@ | Set-Content -Encoding ascii demo.env\ndocker run --rm -p 8080:8080 --env-file demo.env " + IMAGE
+      unix: "docker run --rm -p 8080:8080 -e IMAGING_SEED_DEMO=true -e IMAGING_SECURE_COOKIE=false -e IMAGING_USERS='" + users + "' " + IMAGE
     };
-    var os = /Win/i.test(navigator.platform || navigator.userAgent || "") ? "win" : "unix";
+    var os = "unix";
     var osButtons = [].slice.call(document.querySelectorAll(".cmd-tabs button"));
     var showCmd = function () {
       cmd.textContent = TEXT[os] + "\n\n# then open http://127.0.0.1:8080 and sign in as  admin  with the password  " + pw;

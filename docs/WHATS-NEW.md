@@ -2,6 +2,12 @@
 
 **Engineering release · Synthetic data only · Not for diagnostic use.**
 
+## 0.5.0: Mac app with a 30-day trial (Mac only)
+
+- A 30-day trial, then a licence key checked offline on your Mac. The app never switches features off and never touches your data. Email sales@zyvor.dev for a trial key.
+- The Mac app needs Apple silicon and macOS 15 or later. Windows is no longer offered, and the laptop zip is gone: run the archive on a Mac with Docker Desktop.
+- Pricing is on the website.
+
 ## 0.4.4: India / telerad research patterns
 
 Image only (`ghcr.io/zyvorai/zyvor-imaging:0.4.4`); the Mac app and zip stay at 0.4.0.

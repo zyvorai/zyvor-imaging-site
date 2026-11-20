@@ -29,20 +29,15 @@ If you have [Docker Desktop](https://www.docker.com/products/docker-desktop/) ru
 
 The DMG is signed and notarized by Apple. To check it yourself, see [Releases](RELEASES.md#verify-the-mac-dmg).
 
-### 3. Run it on your own PC (Mac or Windows, about 15 minutes the first time)
+### 3. Run the archive on this Mac (about 15 minutes the first time)
 
-Use this when you have no internet, or want the archive on your own machine.
+Use this when you want the archive on your own machine. There is no Windows version.
 
-1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) **once**, then start it and wait until it says it is running. On Windows, enable WSL2.
-2. Download the **binary zip** (`zyvor-imaging-binary-<version>-<date>.zip`) from the [latest release](https://github.com/zyvorai/zyvor-imaging-site/releases/latest) and unzip it. It carries the application image, so it needs **no registry access and no token.**
-3. Double-click the installer for your computer:
-   - **Mac:** `scripts/mac-install.command`
-   - **Windows:** `scripts/win-install.cmd`
-4. Your browser opens at <http://127.0.0.1:8080> (an address that only your own computer can reach). The login is in the file **`DEMO-LOGIN.txt`** in the unzipped folder.
+1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) **once**, then start it and wait until it says it is running.
+2. Open the [live demo section](https://zyvorai.github.io/zyvor-imaging-site/#live) of the website. It writes one command and a fresh password in your browser. Paste the command into Terminal.
+3. Open <http://127.0.0.1:8080> (an address only your own computer can reach) and sign in as `admin` with the password shown next to the command.
 
-To stop it later: `docker compose -f compose.release.yaml down`
-
-> Python 3 is needed only to generate the private login file (standard library only, no pip). On Windows: `winget install Python.Python.3.12` if it is missing.
+To stop it, press Ctrl+C in Terminal. Nothing is kept unless you add a data volume.
 
 ### For IT teams
 
