@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zyvor Imaging · Every study. In focus.</title>
+<meta name="description" content="Zyvor Imaging is Zyvor AI Labs' medical imaging archive, research viewer (MPR, 3D, stacks, segments) and reporting workspace. Engineering release; synthetic data only; not for diagnostic use.">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://zyvorai.github.io/zyvor-imaging-site/">
+<link rel="icon" href="assets/mark-light.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zyvor Imaging">
+<meta property="og:title" content="Zyvor Imaging · Every study. In focus.">
+<meta property="og:description" content="Medical imaging archive, research viewer and reporting workspace. Synthetic data only; not for diagnostic use.">
+<meta property="og:url" content="https://zyvorai.github.io/zyvor-imaging-site/">
+<meta property="og:image" content="https://zyvorai.github.io/zyvor-imaging-site/assets/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Zyvor Imaging: Every study. In focus.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Zyvor Imaging · Every study. In focus.">
+<meta name="twitter:description" content="Archive, review and report — research evaluation release.">
+<meta name="twitter:image" content="https://zyvorai.github.io/zyvor-imaging-site/assets/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Zyvor Imaging","applicationCategory":"HealthApplication","operatingSystem":"macOS 15 or later (native app); server runs in containers on Mac, Linux or Kubernetes","description":"Medical imaging archive, research viewer, reporting workspace, scanner gateway and HealthOS adapter. Engineering release; not for diagnostic use.","publisher":{"@type":"Organization","name":"Zyvor AI Labs"},"url":"https://zyvorai.github.io/zyvor-imaging-site/","offers":[{"@type":"Offer","name":"Site, up to 5 named users, per year (India, incl. 18% GST)","price":"99999","priceCurrency":"INR","url":"https://zyvor.dev/buy"},{"@type":"Offer","name":"Site, up to 5 named users, per year (outside India, excl. tax)","price":"1009","priceCurrency":"USD","url":"https://zyvor.dev/buy"},{"@type":"Offer","name":"Multi-site Team, per site per year, minimum 3 sites (India, incl. 18% GST)","price":"69999","priceCurrency":"INR","url":"https://zyvor.dev/buy"},{"@type":"Offer","name":"Multi-site Team, per site per year, minimum 3 sites (outside India, excl. tax)","price":"706","priceCurrency":"USD","url":"https://zyvor.dev/buy"}],"downloadUrl":"https://github.com/zyvorai/zyvor-imaging-site/releases/latest"}</script>
+<script>window.__zyvoraTheme={key:"zyvor-imaging-site-theme"}</script>
+<script src="theme.js"></script>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar">
+  <a class="brand" href="#top" aria-label="Zyvor Imaging home">
+    <img class="logo only-light" src="assets/mark-light.svg" alt="" width="32" height="32"><img class="logo only-dark" src="assets/mark-dark.svg" alt="" width="32" height="32">
+    <span>ZYVOR IMAGING</span>
+  </a>
+  <nav id="sections" aria-label="Sections">
+    <a href="#try">Try it</a><a href="#live">Live demo</a><a href="#viewer">Viewer</a><a href="#see">See it</a><a href="#new">What's new</a><a href="#capabilities">Capabilities</a><a href="#security">Security</a><a href="#pricing">Pricing</a><a href="#deploy">Deploy</a><a href="#honest">Honest limits</a><a href="#faq">FAQ</a>
+  </nav>
+  <div class="bar-actions">
+    <button id="theme" class="icon" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+    <a class="btn primary small" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">Ask for a demo</a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <p class="kicker hero-rise">Zyvor AI Labs · Medical imaging</p>
+  <h1 class="hero-rise">Every study.<br /><em>In focus.</em></h1>
+  <p class="lede hero-rise"><strong>Archive, review and report on your infrastructure.</strong> A research viewer built for evaluation, now with MPR, 3D and segments. You do not need to be technical to try it: open a link, or drag one app into Applications, and look at made-up patients.</p>
+  <div class="cta hero-rise"><a class="btn primary" href="#live">Watch it, then try it live</a><a class="btn" href="#try">Try it in 2 minutes</a><a class="btn" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">Ask for a demo link</a></div>
+  <ul class="chips" aria-label="Status">
+    <li class="ok">Engineering release</li><li>Self-hosted</li><li class="warn">Synthetic data only</li><li class="warn">Not for diagnostic use</li>
+  </ul>
+  <div class="window reel-window" id="reel-window" role="group" aria-label="Recording of the advanced research viewer in the running app (synthetic phantom)"><div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+    <video class="reel" id="reel" autoplay muted loop playsinline preload="metadata" poster="media/viewer-demo-poster.jpg" width="1280" height="800" aria-label="MPR, tilt, segmentation and 3D rendering in the Zyvor Imaging research viewer, on a made-up phantom">
+      <source src="media/viewer-demo.webm" type="video/webm"><source src="media/viewer-demo.mp4" type="video/mp4">
+    </video>
+    <button class="reel-toggle" id="reel-toggle" type="button" aria-label="Pause the recording" aria-pressed="false">Pause</button>
+  </div>
+  <p class="foot hero-rise">A real recording of the running app on a made-up phantom: no patient data, no mock-up. Research use only.</p>
+</section>
+
+<section id="try" class="tint">
+  <div class="center"><p class="kicker">Try it</p><h2>Test it today. No technical skills needed.</h2><p class="sub">Pick the way that suits you. Every option uses made-up (synthetic) patients, never real ones.</p></div>
+
+  <div class="callout rv" role="note">
+    <h3>Before you start</h3>
+    <ul>
+      <li><strong>Only synthetic data.</strong> Please do not load real patient images into an evaluation.</li>
+      <li><strong>Not for diagnosis.</strong> The viewer is for research and evaluation.</li>
+      <li><strong>Your own login arrives by email.</strong> Private logins are never put on this page; the shared read-only demo login is in the Live demo section. Ask for your own below.</li>
+    </ul>
+  </div>
+
+  <div class="paths paths-3">
+    <article class="path rv">
+      <p class="path-n">1</p>
+      <p class="eta">Easiest · about 2 minutes · nothing to install</p>
+      <h3>Open a demo link</h3>
+      <ol class="steps">
+        <li class="step rv"><span>Email us with the button below. We send a web link, a username and a password.</span></li>
+        <li class="step rv"><span>Open the link in Chrome, Safari or Edge and sign in.</span></li>
+        <li class="step rv"><span>You land on the Overview. Go to the checklist below.</span></li>
+      </ol>
+      <a class="btn primary" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access&amp;body=Hello%2C%20please%20send%20me%20a%20demo%20link%20and%20login.%20My%20role%20is%3A%20(doctor%20%2F%20technologist%20%2F%20IT)">Ask for a demo link</a>
+    </article>
+    <article class="path rv">
+      <p class="path-n">2</p>
+      <p class="eta">On a Mac (macOS 15 or later) · about 5 minutes</p>
+      <h3>Mac app · 30-day trial</h3>
+      <ol class="steps">
+        <li class="step rv"><span>Download <strong>Zyvor-Imaging-0.5.0.dmg</strong> from the page that opens. Pick the DMG, not “Source code”.</span></li>
+        <li class="step rv"><span>Open it and drag <strong>Zyvor Imaging</strong> onto <strong>Applications</strong>.</span></li>
+        <li class="step rv"><span>Open the app. Paste the web address from our email and sign in. For the free 30-day trial key, email <a href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20trial">sales@zyvor.dev</a> and paste it under <strong>Licence…</strong>. The app keeps working without one.</span></li>
+      </ol>
+      <a class="btn" href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Download the Mac app</a>
+    </article>
+    <article class="path rv">
+      <p class="path-n">3</p>
+      <p class="eta">On a Mac · about 15 minutes the first time</p>
+      <h3>Run the archive on this Mac</h3>
+      <ol class="steps">
+        <li class="step rv"><span>Install <strong>Docker Desktop</strong> once, then start it and wait until it says it is running.</span></li>
+        <li class="step rv"><span>Paste the one-command start from the <a href="#live">live demo section</a> into Terminal.</span></li>
+        <li class="step rv"><span>Open the Mac app (or your browser) at <strong>127.0.0.1:8080</strong> and sign in with the password shown next to the command.</span></li>
+      </ol>
+      <a class="btn" href="#live">Show me the command</a>
+    </article>
+  </div>
+
+  <div class="howto rv">
+    <h3>Your 10-minute test</h3>
+    <p class="howto-note">Tick them off as you go. Everything below is in version 0.4.0 (the viewer part is in the live demo section above); if you were sent a demo link, ask which version it runs.</p>
+    <div class="checks">
+      <section>
+        <h4>Look around · 3 minutes</h4>
+        <ol class="steps">
+          <li class="step"><span>On <strong>Overview</strong>, see the study counts and the tiles that say what needs attention.</span></li>
+          <li class="step"><span>Open <strong>Study worklist</strong>. Try the search box, then switch between the list and the picture grid.</span></li>
+          <li class="step"><span>Click a study. In the viewer, scroll through the images and drag to change brightness (window/level).</span></li>
+        </ol>
+      </section>
+      <section>
+        <h4>Try the safety features · 4 minutes</h4>
+        <ol class="steps">
+          <li class="step"><span>Find a small amber badge such as <strong>1 check</strong> or <strong>name differs</strong> on the worklist and click it.</span></li>
+          <li class="step"><span>In the study view, read the <strong>Image checks</strong> panel and the <strong>Prior studies</strong> list. Does it tell you what you would expect?</span></li>
+          <li class="step"><span>If your role allows it (radiologist or admin), press <strong>De-identified…</strong>, read the preview, and download the pseudonymised copy.</span></li>
+        </ol>
+      </section>
+      <section>
+        <h4>Tell us · 3 minutes</h4>
+        <ol class="steps">
+          <li class="step"><span>If your role allows it, type a short draft report and save it.</span></li>
+          <li class="step"><span>Write down anything that confused you, was slow, or that you expected and did not find.</span></li>
+          <li class="step"><span>Send it to us. Short and honest is perfect.</span></li>
+        </ol>
+        <a class="btn primary" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20evaluation%20feedback&amp;body=What%20I%20tried%3A%0A%0AWhat%20confused%20me%3A%0A%0AWhat%20I%20expected%20and%20did%20not%20find%3A%0A%0AMy%20role%20(doctor%20%2F%20technologist%20%2F%20IT)%3A">Send feedback</a>
+      </section>
+    </div>
+  </div>
+
+  <div class="faq help rv">
+    <h3>Something not working?</h3>
+    <details><summary>The Mac says the app cannot be opened</summary><p>Right-click (or Control-click) the app and choose <strong>Open</strong>, then confirm. You only need to do this the first time.</p></details>
+    <details><summary>Docker says it is not running</summary><p>Open Docker Desktop and wait until the status says it is running (this can take a minute). Then double-click the installer again.</p></details>
+    <details><summary>My browser did not open by itself</summary><p>Open your browser and go to <strong>http://127.0.0.1:8080</strong>. That address is only your own computer.</p></details>
+    <details><summary>I do not know my login</summary><p>If you used the zip, open <strong>DEMO-LOGIN.txt</strong> in the unzipped folder. For a demo link, reply to our email and we will resend it.</p></details>
+    <details><summary>The page is blank or stuck</summary><p>Reload the page, or try another browser (Chrome, Safari or Edge). If it is still stuck, tell us what you clicked last.</p></details>
+    <details><summary>I would rather have someone walk me through it</summary><p>Of course. Email <a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a> and we will book ten minutes.</p></details>
+  </div>
+</section>
+
+
+<section id="live" class="live">
+  <div class="center"><p class="kicker">Live demo</p><h2>See it running. Then run it yourself.</h2><p class="sub">Watch a thirty-second tour of the real application, then try the same thing on your own machine in about two minutes, or ask us for a hosted link. Every study is a made-up phantom.</p></div>
+
+  <div class="live-grid">
+    <div class="live-video rv">
+      <div class="window"><div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+        <video id="tour" controls muted playsinline preload="metadata" poster="media/viewer-demo-poster.jpg" width="1280" height="800" aria-label="Thirty-second tour of the research viewer: open a series, MPR, tilt, segment, 3D, clip box">
+          <source src="media/viewer-demo.webm" type="video/webm"><source src="media/viewer-demo.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="chapters" role="group" aria-label="Jump to a moment in the tour">
+        <button type="button" data-t="1.1">Open a series</button><button type="button" data-t="5.3">MPR</button><button type="button" data-t="8.2">Tilt</button><button type="button" data-t="11.7">Segment</button><button type="button" data-t="13.2">Edit</button><button type="button" data-t="16.6">3D</button><button type="button" data-t="20.5">Clip box</button>
+      </div>
+    </div>
+
+    <div class="live-run rv">
+      <h3>Try it in your browser now</h3>
+      <p class="live-note">Open the shared demo and press <strong>Fill in the demo login</strong> on its sign-in page. It signs you in as <strong>viewer</strong>. It is a read-only copy: you can open the phantom, use MPR and 3D and take measurements, but nothing you do is saved, and everything on it is made up. Please do not type anything private into it.</p>
+      <p><a class="btn primary" href="https://demo.zyvor.dev" rel="noopener">Open the live demo</a></p>
+      <p class="live-note small">The login is also shown on that page. By hand: username <code>viewer</code>, password <code>zyvor-live-demo-viewer-read-only-2026</code>.</p>
+      <h3>Or run the live demo on your computer</h3>
+      <p class="live-note">Needs <strong>Docker Desktop</strong> on your Mac, running once. This starts the real application with made-up studies, including the phantom volume the viewer uses. Nothing leaves your computer.</p>
+      <div class="cmd" id="cmd-box">
+        <div class="cmd-head"><span class="cmd-tabs" role="radiogroup" aria-label="Your computer"><button type="button" role="radio" aria-checked="true" data-os="unix">Mac / Linux Terminal</button></span><button type="button" id="cmd-copy">Copy</button></div>
+        <pre id="cmd" tabindex="0" aria-label="Command to run the live demo">Loading the command…</pre>
+      </div>
+      <ol class="steps live-steps">
+        <li class="step"><span>Paste it into a terminal (Terminal on a Mac). The first start downloads the image.</span></li>
+        <li class="step"><span>Open <a href="http://127.0.0.1:8080">http://127.0.0.1:8080</a> (an address that only exists on your own computer). Sign in as <strong>admin</strong> with the password shown next to the command.</span></li>
+        <li class="step"><span>Stop it with <strong>Ctrl+C</strong>. Nothing is kept unless you add a data volume.</span></li>
+      </ol>
+      <p class="live-note small">A new password is made in your browser each time you load this page; it is never sent anywhere. Prefer no terminal? Use the <a href="#try">Mac app</a>, or <a href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">ask for a hosted link</a>.</p>
+    </div>
+  </div>
+
+  <div class="tryfive rv">
+    <h3>Five things to try in the viewer</h3>
+    <ol class="five">
+      <li><b>Open the phantom.</b> Worklist → search <code>SYN-VOL</code> → open it → press <b>MPR / 3D</b>.</li>
+      <li><b>Find the sphere.</b> Click the bright ball in the axial view; the other two planes follow the crosshair.</li>
+      <li><b>Tilt the planes.</b> Type <code>30</code> into the Tilt boxes, then press <b>Reset</b>.</li>
+      <li><b>Grow a segment.</b> Press <kbd>g</kbd> and click the ball, then <kbd>x</kbd> to erase, <kbd>h</kbd> to fill holes, <kbd>z</kbd> to undo.</li>
+      <li><b>Go 3D.</b> Open the <b>3D</b> tab, drag to rotate, press <kbd>1</kbd>–<kbd>4</kbd> for presets and move the clip sliders.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="viewer" class="viewer tint">
+  <div class="center"><p class="kicker">The advanced research viewer</p><h2>A viewer we wrote ourselves.</h2><p class="sub">New in 0.4.0. Written for this product, from the DICOM standard, in plain browser code: no third-party viewer inside. Research use only.</p></div>
+
+  <div class="vtabs rv">
+    <div class="pillset" role="radiogroup" aria-label="Viewer feature" id="vtabs">
+      <button type="button" role="radio" aria-checked="true" data-value="mpr">MPR</button>
+      <button type="button" role="radio" aria-checked="false" data-value="tilt">Tilt</button>
+      <button type="button" role="radio" aria-checked="false" data-value="segment">Segments</button>
+      <button type="button" role="radio" aria-checked="false" data-value="3d">3D</button>
+      <button type="button" role="radio" aria-checked="false" data-value="clip">Clip box</button>
+    </div>
+    <figure class="shot"><img id="vshot" src="media/viewer-mpr.jpg" alt="MPR: three linked planes through the phantom's sphere" width="1280" height="800" loading="lazy"><figcaption id="vshot-cap">MPR · made-up phantom</figcaption></figure>
+    <p class="shot-note" id="vshot-note">Axial, coronal and sagittal planes with a shared crosshair. Click or drag to move it; scroll to step through a plane.</p>
+  </div>
+
+  <div class="grid vgrid">
+    <div class="card rv"><h3>MPR and tilt</h3><p>Three linked planes, thick slabs, and all three planes tilted together about the patient axes. Checked against a phantom with known shapes and sizes.</p></div>
+    <div class="card rv"><h3>3D, in colour</h3><p>Volume rendering, MIP, MinIP and average on WebGPU or WebGL2, with a clip box and your segments in colour. It drops to MIP by itself on a slow computer.</p></div>
+    <div class="card rv"><h3>Stacks</h3><p>Several series side by side (1×1 to 2×2), placed by a hanging protocol, scrolling together by position in the patient.</p></div>
+    <div class="card rv"><h3>Measure and segment</h3><p>Length, angle, ellipse, rectangle and probe with Hounsfield statistics; segments by region grow or threshold, then brush, eraser, fill holes, smoothing and undo. Saved with the series.</p></div>
+    <div class="card rv"><h3>DICOM in, DICOM out</h3><p>A Structured Report of measurements and segments, a DICOM Segmentation download, and Segmentation objects from elsewhere drawn over the images.</p></div>
+    <div class="card rv"><h3>Our own decoders</h3><p>JPEG, JPEG-LS, JPEG 2000 and High-Throughput JPEG 2000 decoded in the browser by code written for this product.</p></div>
+  </div>
+
+  <div class="honest-strip rv">
+    <div><h3>How it was checked</h3><p>On a made-up phantom with known answers, against images from independent encoders, and with the command-line tools of DCMTK and an independent DICOM validator.</p></div>
+    <div><h3>What is not shown</h3><p>No clinical validation. No comparison with other viewers. No third-party viewer has opened our Segmentation or Report files yet. Only synthetic data was used. <a href="https://github.com/zyvorai/zyvor-imaging-site/blob/main/docs/VIEWER.md">Read the details</a>.</p></div>
+  </div>
+</section>
+
+<section class="band" aria-label="At a glance">
+  <div><b>Archive</b><span>Original DICOM with SHA-256 verification</span></div>
+  <div><b>Viewer</b><span>MPR, 3D, stacks, measurements, segments</span></div>
+  <div><b>Report</b><span>Drafts, finals and immutable revisions</span></div>
+  <div><b>Gateway</b><span>DIMSE store/query/move with AE allowlist</span></div>
+</section>
+
+<section id="who" class="center">
+  <p class="kicker">Built for imaging workflows</p>
+  <h2>One workspace from ingest to report.</h2>
+  <div class="grid">
+    <div class="card rv"><h3>Technologists</h3><p>Ingest from scanners over DIMSE or DICOMweb STOW. Calling-AE allowlists and TLS where you need them.</p></div>
+    <div class="card rv"><h3>Radiologists</h3><p>Worklist, research viewer and reporting with drafts, finalisation and amendments — not a diagnostic workstation claim.</p></div>
+    <div class="card rv"><h3>Operators</h3><p>Compose for a laptop, Helm for a cluster, or a k3s edge with HTTPS and organisation sign-in.</p></div>
+  </div>
+</section>
+
+<section id="see" class="tint">
+  <div class="center"><p class="kicker">See it</p><h2>Real screens, synthetic studies.</h2><p class="sub">Captured from the running application. Every name and number shown is synthetic.</p></div>
+  <div class="controls">
+    <div class="seg wrap" role="radiogroup" aria-label="Screen" data-key="view">
+      <button type="button" role="radio" aria-checked="true" data-value="overview">Overview</button>
+      <button type="button" role="radio" aria-checked="false" data-value="worklist">Worklist</button>
+      <button type="button" role="radio" aria-checked="false" data-value="grid">Picture grid</button>
+      <button type="button" role="radio" aria-checked="false" data-value="orders">Orders</button>
+      <button type="button" role="radio" aria-checked="false" data-value="priors">Prior studies</button>
+      <button type="button" role="radio" aria-checked="false" data-value="identity">Wrong patient</button>
+      <button type="button" role="radio" aria-checked="false" data-value="analysis">Image checks</button>
+      <button type="button" role="radio" aria-checked="false" data-value="deid">De-identified export</button>
+      <button type="button" role="radio" aria-checked="false" data-value="cohort">Pick several</button>
+      <button type="button" role="radio" aria-checked="false" data-value="audit">Audit trail</button>
+      <button type="button" role="radio" aria-checked="false" data-value="studio">Image studio</button>
+    </div>
+    <div class="seg" role="radiogroup" aria-label="Appearance" data-key="mode">
+      <button type="button" role="radio" aria-checked="true" data-value="light">Light</button>
+      <button type="button" role="radio" aria-checked="false" data-value="dark">Dark</button>
+    </div>
+  </div>
+  <figure class="shot"><img id="shot" src="shots/light-overview.jpg" alt="Zyvor Imaging: overview, light appearance, synthetic data" width="1440" height="900" loading="lazy"><figcaption id="shot-cap">Overview · light · synthetic data</figcaption><p id="shot-note" class="shot-note"></p></figure>
+  <div class="motion rv"><h3>In motion</h3><p class="sub">A short tour: the picture grid, a name-differs badge that jumps to prior studies, the de-identified export preview, search and image checks.</p><img src="shots/tour.gif" alt="Short animated tour of the worklist, prior studies, de-identified export and image checks (synthetic data)" width="760" loading="lazy"></div>
+</section>
+
+<section id="new">
+  <div class="center"><p class="kicker">What's new</p><h2>A research viewer of our own.</h2><p class="sub">New in version 0.4.0, released 25 October 2026.</p></div>
+  <div class="grid">
+    <div class="card rv"><h3>MPR, 3D and stacks</h3><p>Linked planes you can tilt, volume rendering with a clip box, and several series side by side with scrolling linked by position.</p></div>
+    <div class="card rv"><h3>Measure and segment</h3><p>Measurements and segments saved with the series and editable: region grow or threshold, brush, eraser, fill holes, smoothing.</p></div>
+    <div class="card rv"><h3>DICOM Segmentation and Report</h3><p>Download or store a Structured Report and a Segmentation object. Binary and fractional Segmentations from elsewhere are drawn over the images.</p></div>
+    <div class="card rv"><h3>Decoders written here</h3><p>JPEG, JPEG-LS, JPEG 2000 and High-Throughput JPEG 2000 in the browser, checked against independent encoders.</p></div>
+    <div class="card rv"><h3>Checked with DCMTK</h3><p>The scanner gateway is exercised with DCMTK's echo, store, find, get and move tools, and Segmentation intake is fuzz-tested.</p></div>
+    <div class="card rv"><h3>Mac app 0.5.0: trial and licence</h3><p>A 30-day trial, then a licence key checked offline on your Mac. It never switches features off and never touches your data. The Mac app now needs macOS 15 or later. Windows is no longer offered.</p></div>
+  </div>
+  <details class="earlier rv"><summary>Also in 0.3.x: safer sharing, fewer surprises</summary>
+    <p><strong>Wrong-patient radar</strong> (a patient ID under two names gets a badge and a warning; one click shows the priors). <strong>Image checks</strong> for CT, MR and X-ray, and a warning when text looks burned into a picture: checks, not diagnoses. <strong>De-identified export</strong> as a pseudonymised research copy, single or grouped, not a certified de-identification. <strong>Filters and thumbnails</strong> by date and tag. <strong>Optional AI helpers</strong> (off by default; they need a model your IT team runs). <strong>Mac app</strong> with priors, the banner and export.</p>
+  </details>
+</section>
+
+<section id="capabilities">
+  <div class="center"><p class="kicker">Capabilities</p><h2>What ships in the engineering release.</h2></div>
+  <picture class="pic"><img class="only-light" src="assets/capabilities-light.svg" alt="Capabilities: archive, viewer, reporting, gateway, DICOMweb, identity" loading="lazy"><img class="only-dark" src="assets/capabilities-dark.svg" alt="Capabilities: archive, viewer, reporting, gateway, DICOMweb, identity" loading="lazy"></picture>
+  <div class="grid">
+    <div class="card rv"><h3>DICOM archive</h3><p>Byte-for-byte storage, UID hierarchy checks, duplicate handling and integrity scans on your volume or bucket.</p></div>
+    <div class="card rv"><h3>DICOMweb</h3><p>STOW, QIDO, WADO, metadata, bulk data, frames and rendered PNG — for tools that speak the web APIs.</p></div>
+    <div class="card rv"><h3>Scanner gateway</h3><p>C-ECHO, C-STORE, Study Root C-FIND and C-MOVE with calling-AE allowlist; TLS for non-loopback listeners.</p></div>
+    <div class="card rv"><h3>Identity</h3><p>Named roles, optional TOTP, and OIDC authorization code with PKCE. Organisation sign-in on the k3s edge.</p></div>
+  </div>
+</section>
+
+<section id="security" class="tint">
+  <div class="center"><p class="kicker">Security posture</p><h2>Controls you can point at.</h2><p class="sub">Sessions hashed. Mutations origin-checked. Audit recorded. OIDC uses PKCE. See the private product docs for depth.</p></div>
+  <div class="grid">
+    <div class="card rv"><h3>Browser sessions</h3><p>HttpOnly cookies, Secure when TLS terminates at the edge, SameSite, and hashed session identifiers on the server.</p></div>
+    <div class="card rv"><h3>OIDC</h3><p>Authorization code with PKCE S256, state, nonce and verified RS256 claims. MFA claim requirement is configurable.</p></div>
+    <div class="card rv"><h3>Objects</h3><p>Immutable write path with checksum verification on read. Portable backup tooling for local and shared backends.</p></div>
+  </div>
+  <p class="center"><a class="more" href="mailto:security@zyvor.dev">security@zyvor.dev</a></p>
+</section>
+
+<section id="pricing">
+  <div class="center"><p class="kicker">Pricing</p><h2>A 30-day trial, then a licence.</h2><p class="sub">Introductory list prices: INR including 18% GST in India, US dollars excluding tax elsewhere. Email us and we send a trial key or an invoice.</p></div>
+  <div class="grid">
+    <div class="card rv"><h3>Site · ₹99,999 a year</h3><p>One site, up to 5 named users, no per-study fees. About US$1,009 a year excl. tax outside India.</p></div>
+    <div class="card rv"><h3>Multi-site Team · ₹69,999 per site a year</h3><p>For groups with 3 or more sites (minimum ₹2,09,997, about US$2,119 excl. tax), by invoice. About US$706 per site excl. tax outside India.</p></div>
+    <div class="card rv"><h3>Free 30-day trial</h3><p>Ask for a trial key at <a href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20trial">sales@zyvor.dev</a>. When it ends the app keeps working and shows a reminder; nothing is disabled and no data is touched.</p></div>
+  </div>
+  <div class="cta"><a class="btn primary" href="https://zyvor.dev/buy">Buy</a><a class="btn" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20trial">Start 30-day trial</a></div>
+  <p class="foot">Prices: INR incl. 18% GST in India; US dollars excl. tax elsewhere (VAT, GST or sales tax added where applicable). Pay online by UPI, card or netbanking; international cards work (charged in rupees); or request a US-dollar invoice by bank transfer. Custom pricing: <a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a>. These prices are for the <strong>research and evaluation</strong> product described under Honest limits. It is not a certified medical product and is not for diagnostic use. Hosting, storage and integration work are not included.</p>
+</section>
+
+<section id="deploy">
+  <div class="center"><p class="kicker">Deploy</p><h2>Run it where your studies live.</h2><p class="sub">Doctors start with the Mac DMG or a hosted demo. IT can pull the image on a Mac, run it in Docker or FluxVM, or stand up a cluster edge.</p></div>
+  <picture class="pic rv"><img class="only-light" src="assets/deploy-light.svg" alt="Deploy: Mac DMG, Docker on a Mac, Compose or Helm, k3s edge" loading="lazy"><img class="only-dark" src="assets/deploy-dark.svg" alt="Deploy: Mac DMG, Docker on a Mac, Compose or Helm, k3s edge" loading="lazy"></picture>
+  <div class="grid">
+    <div class="card rv"><h3>Mac DMG + Docker on your Mac</h3><p>Drag the notarized Mac app into Applications, and run the archive with Docker Desktop once: seeded synthetic studies, no GitHub token.</p></div>
+    <div class="card rv"><h3>Registry pull</h3><p>IT can pull the published GHCR image when the package is public, or use FluxVM on Apple silicon.</p></div>
+    <div class="card rv"><h3>Your k3s / k8s</h3><p>One command on your cluster: NodePort token login, or full Envoy + Keycloak HTTPS edge — both auto-seed synthetic studies.</p></div>
+  </div>
+</section>
+
+<section id="honest" class="tint">
+  <div class="center"><p class="kicker">Honest limits</p><h2>What this is — and is not.</h2></div>
+  <div class="grid">
+    <div class="card rv"><h3>Research viewer</h3><p>Not validated for diagnostic decisions. No MPR/3D diagnostic workstation claim, and no comparison with other viewers.</p></div>
+    <div class="card rv"><h3>Synthetic data</h3><p>Built and tested with synthetic data only. Do not load real patient studies into a public evaluation.</p></div>
+    <div class="card rv"><h3>Not certified</h3><p>No clinical validation or regulatory certification claim (HIPAA, MDR, FDA, etc.).</p></div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="center"><p class="kicker">FAQ</p><h2>Straight answers.</h2></div>
+  <div class="faq">
+    <details class="rv"><summary>Is this for diagnosis?</summary><p>No. The browser viewer is a research viewer for evaluation. It is not a certified diagnostic workstation.</p></details>
+    <details class="rv"><summary>Where does the software live?</summary><p>The product repository is private. This site is the public marketing surface and hosts <a href="https://github.com/zyvorai/zyvor-imaging-site/releases">evaluation releases</a> — the Mac DMG, screenshots, and contact. No application source.</p></details>
+    <details class="rv"><summary>How do we evaluate?</summary><p>Ask sales for a <strong>hosted demo</strong> (browser only), download the <strong>Mac DMG</strong> (drag to Applications, 30-day trial), or run the archive on your Mac with Docker Desktop. Ignore automatic “Source code” archives. Passwords are never published here — sales sends logins privately.</p></details>
+    <details class="rv"><summary>I am a doctor — what do I click?</summary><p><strong>Fastest:</strong> email sales for a hosted link. <strong>On a Mac:</strong> download the DMG → drag Zyvor Imaging into Applications → open → paste the Base URL and password from the sales email. <strong>Then test:</strong> Worklist → open a study → research viewer. Synthetic data only; not for diagnosis.</p></details>
+    <details class="rv"><summary>Do I have to install anything?</summary><p>Not for the demo link: it opens in your browser. The Mac app is a normal drag-to-Applications install. Only the "run the archive on this Mac" option needs Docker Desktop, once. There is no Windows version.</p></details>
+    <details class="rv"><summary>Can I try it with my own patients' images?</summary><p>Please do not. This is an engineering release tested with synthetic data. Use the sample studies, or ask us for more synthetic ones.</p></details>
+    <details class="rv"><summary>What do the AI features do, and are they on?</summary><p>They are off unless your IT team connects a model they run. They help with search and wording, never with diagnosis, and nothing is saved until you press Insert. See the product documentation we send with your evaluation.</p></details>
+    <details class="rv"><summary>How do I give feedback?</summary><p>Use the "Send feedback" button in the test checklist, or email <a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a>. Tell us what confused you; that is the most useful thing.</p></details>
+    <details class="rv"><summary>Who do we contact?</summary><p><a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a> for evaluations · <a href="mailto:security@zyvor.dev">security@zyvor.dev</a> for security.</p></details>
+  </div>
+</section>
+
+<section id="contact" class="center">
+  <p class="kicker">Next step</p>
+  <h2>See it with your team.</h2>
+  <p class="sub">Evaluations use synthetic data on infrastructure you approve.</p>
+  <div class="cta"><a class="btn primary" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">Ask for a demo link</a><a class="btn" href="#try">See how to try it</a></div>
+</section>
+</main>
+
+<footer>
+  <div class="foot-brand">
+    <img class="logo only-light" src="assets/mark-light.svg" alt="" width="28" height="28"><img class="logo only-dark" src="assets/mark-dark.svg" alt="" width="28" height="28">
+    <span>Zyvor Imaging</span>
+  </div>
+  <p>Engineering release · Synthetic data only · Not for diagnostic use</p>
+  <p><a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a> · <a href="mailto:security@zyvor.dev">security@zyvor.dev</a></p>
+  <p>© 2026 Zyvor AI Labs. All rights reserved.</p>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
