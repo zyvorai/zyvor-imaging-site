@@ -21,7 +21,7 @@
 <meta name="twitter:title" content="Zyvor Imaging · Every study. In focus.">
 <meta name="twitter:description" content="Archive, review and report — research evaluation release.">
 <meta name="twitter:image" content="https://zyvorai.github.io/zyvor-imaging-site/assets/og.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Zyvor Imaging","applicationCategory":"HealthApplication","operatingSystem":"macOS (native DMG), Windows (Docker Desktop), Linux, containers, Kubernetes","description":"Medical imaging archive, research viewer, reporting workspace, scanner gateway and HealthOS adapter. Engineering release; not for diagnostic use.","publisher":{"@type":"Organization","name":"Zyvor AI Labs"},"url":"https://zyvorai.github.io/zyvor-imaging-site/","downloadUrl":"https://github.com/zyvorai/zyvor-imaging-site/releases/latest"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Zyvor Imaging","applicationCategory":"HealthApplication","operatingSystem":"macOS 15 or later (native app); server runs in containers on Mac, Linux or Kubernetes","description":"Medical imaging archive, research viewer, reporting workspace, scanner gateway and HealthOS adapter. Engineering release; not for diagnostic use.","publisher":{"@type":"Organization","name":"Zyvor AI Labs"},"url":"https://zyvorai.github.io/zyvor-imaging-site/","downloadUrl":"https://github.com/zyvorai/zyvor-imaging-site/releases/latest"}</script>
 <script>window.__zyvoraTheme={key:"zyvor-imaging-site-theme"}</script>
 <script src="theme.js"></script>
 <link rel="stylesheet" href="site.css">
@@ -35,7 +35,7 @@
     <span>ZYVOR IMAGING</span>
   </a>
   <nav id="sections" aria-label="Sections">
-    <a href="#try">Try it</a><a href="#live">Live demo</a><a href="#viewer">Viewer</a><a href="#see">See it</a><a href="#new">What's new</a><a href="#capabilities">Capabilities</a><a href="#security">Security</a><a href="#deploy">Deploy</a><a href="#honest">Honest limits</a><a href="#faq">FAQ</a>
+    <a href="#try">Try it</a><a href="#live">Live demo</a><a href="#viewer">Viewer</a><a href="#see">See it</a><a href="#new">What's new</a><a href="#capabilities">Capabilities</a><a href="#security">Security</a><a href="#pricing">Pricing</a><a href="#deploy">Deploy</a><a href="#honest">Honest limits</a><a href="#faq">FAQ</a>
   </nav>
   <div class="bar-actions">
     <button id="theme" class="icon" type="button" aria-pressed="false" aria-label="Switch to dark mode">
@@ -90,25 +90,25 @@
     </article>
     <article class="path rv">
       <p class="path-n">2</p>
-      <p class="eta">On a Mac · about 5 minutes</p>
-      <h3>Mac app</h3>
+      <p class="eta">On a Mac (macOS 15 or later) · about 5 minutes</p>
+      <h3>Mac app · 30-day trial</h3>
       <ol class="steps">
-        <li class="step rv"><span>Download <strong>Zyvor-Imaging-0.4.0.dmg</strong> from the page that opens. Pick the DMG, not “Source code”.</span></li>
+        <li class="step rv"><span>Download <strong>Zyvor-Imaging-0.5.0.dmg</strong> from the page that opens. Pick the DMG, not “Source code”.</span></li>
         <li class="step rv"><span>Open it and drag <strong>Zyvor Imaging</strong> onto <strong>Applications</strong>.</span></li>
-        <li class="step rv"><span>Open the app. Paste the web address from our email and sign in.</span></li>
+        <li class="step rv"><span>Open the app. Paste the web address from our email and sign in. For the free 30-day trial key, email <a href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20trial">sales@zyvor.dev</a> and paste it under <strong>Licence…</strong>. The app keeps working without one.</span></li>
       </ol>
       <a class="btn" href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Download the Mac app</a>
     </article>
     <article class="path rv">
       <p class="path-n">3</p>
-      <p class="eta">Windows or no internet · about 15 minutes the first time</p>
-      <h3>Run it on your own PC</h3>
+      <p class="eta">On a Mac · about 15 minutes the first time</p>
+      <h3>Run the archive on this Mac</h3>
       <ol class="steps">
         <li class="step rv"><span>Install <strong>Docker Desktop</strong> once, then start it and wait until it says it is running.</span></li>
-        <li class="step rv"><span>Download the <strong>binary zip</strong> and unzip it.</span></li>
-        <li class="step rv"><span>Double-click the installer for your computer. Your browser opens by itself; the login is in the file <strong>DEMO-LOGIN.txt</strong>.</span></li>
+        <li class="step rv"><span>Paste the one-command start from the <a href="#live">live demo section</a> into Terminal.</span></li>
+        <li class="step rv"><span>Open the Mac app (or your browser) at <strong>127.0.0.1:8080</strong> and sign in with the password shown next to the command.</span></li>
       </ol>
-      <a class="btn" href="https://github.com/zyvorai/zyvor-imaging-site/releases/latest">Download the zip</a>
+      <a class="btn" href="#live">Show me the command</a>
     </article>
   </div>
 
@@ -177,17 +177,17 @@
       <p><a class="btn primary" href="https://demo.zyvor.dev" rel="noopener">Open the live demo</a></p>
       <p class="live-note small">The login is also shown on that page. By hand: username <code>viewer</code>, password <code>zyvor-live-demo-viewer-read-only-2026</code>.</p>
       <h3>Or run the live demo on your computer</h3>
-      <p class="live-note">Needs <strong>Docker Desktop</strong> (Mac or Windows) running once. This starts the real application with made-up studies, including the phantom volume the viewer uses. Nothing leaves your computer.</p>
+      <p class="live-note">Needs <strong>Docker Desktop</strong> on your Mac, running once. This starts the real application with made-up studies, including the phantom volume the viewer uses. Nothing leaves your computer.</p>
       <div class="cmd" id="cmd-box">
-        <div class="cmd-head"><span class="cmd-tabs" role="radiogroup" aria-label="Your computer"><button type="button" role="radio" aria-checked="true" data-os="unix">Mac / Linux</button><button type="button" role="radio" aria-checked="false" data-os="win">Windows PowerShell</button></span><button type="button" id="cmd-copy">Copy</button></div>
+        <div class="cmd-head"><span class="cmd-tabs" role="radiogroup" aria-label="Your computer"><button type="button" role="radio" aria-checked="true" data-os="unix">Mac / Linux Terminal</button></span><button type="button" id="cmd-copy">Copy</button></div>
         <pre id="cmd" tabindex="0" aria-label="Command to run the live demo">Loading the command…</pre>
       </div>
       <ol class="steps live-steps">
-        <li class="step"><span>Paste it into a terminal (Terminal on a Mac, PowerShell on Windows). The first start downloads the image.</span></li>
+        <li class="step"><span>Paste it into a terminal (Terminal on a Mac). The first start downloads the image.</span></li>
         <li class="step"><span>Open <a href="http://127.0.0.1:8080">http://127.0.0.1:8080</a> (an address that only exists on your own computer). Sign in as <strong>admin</strong> with the password shown next to the command.</span></li>
         <li class="step"><span>Stop it with <strong>Ctrl+C</strong>. Nothing is kept unless you add a data volume.</span></li>
       </ol>
-      <p class="live-note small">A new password is made in your browser each time you load this page; it is never sent anywhere. Prefer no terminal? Use the <a href="#try">Mac app or the zip</a>, or <a href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">ask for a hosted link</a>.</p>
+      <p class="live-note small">A new password is made in your browser each time you load this page; it is never sent anywhere. Prefer no terminal? Use the <a href="#try">Mac app</a>, or <a href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">ask for a hosted link</a>.</p>
     </div>
   </div>
 
@@ -283,7 +283,7 @@
     <div class="card rv"><h3>DICOM Segmentation and Report</h3><p>Download or store a Structured Report and a Segmentation object. Binary and fractional Segmentations from elsewhere are drawn over the images.</p></div>
     <div class="card rv"><h3>Decoders written here</h3><p>JPEG, JPEG-LS, JPEG 2000 and High-Throughput JPEG 2000 in the browser, checked against independent encoders.</p></div>
     <div class="card rv"><h3>Checked with DCMTK</h3><p>The scanner gateway is exercised with DCMTK's echo, store, find, get and move tools, and Segmentation intake is fuzz-tested.</p></div>
-    <div class="card rv"><h3>Fixes</h3><p>The Mac and Windows installers and the Mac app now say 0.4.0 and pull the 0.4.0 image.</p></div>
+    <div class="card rv"><h3>Mac app 0.5.0: trial and licence</h3><p>A 30-day trial, then a licence key checked offline on your Mac. It never switches features off and never touches your data. The Mac app now needs macOS 15 or later. Windows is no longer offered.</p></div>
   </div>
   <details class="earlier rv"><summary>Also in 0.3.x: safer sharing, fewer surprises</summary>
     <p><strong>Wrong-patient radar</strong> (a patient ID under two names gets a badge and a warning; one click shows the priors). <strong>Image checks</strong> for CT, MR and X-ray, and a warning when text looks burned into a picture: checks, not diagnoses. <strong>De-identified export</strong> as a pseudonymised research copy, single or grouped, not a certified de-identification. <strong>Filters and thumbnails</strong> by date and tag. <strong>Optional AI helpers</strong> (off by default; they need a model your IT team runs). <strong>Mac app</strong> with priors, the banner and export.</p>
@@ -311,11 +311,21 @@
   <p class="center"><a class="more" href="mailto:security@zyvor.dev">security@zyvor.dev</a></p>
 </section>
 
-<section id="deploy">
-  <div class="center"><p class="kicker">Deploy</p><h2>Run it where your studies live.</h2><p class="sub">Doctors start with the Mac DMG or a hosted demo. IT can run the binary zip, pull the image, or stand up a cluster edge.</p></div>
-  <picture class="pic rv"><img class="only-light" src="assets/deploy-light.svg" alt="Deploy: Mac DMG, laptop zip, Compose or Helm, k3s edge" loading="lazy"><img class="only-dark" src="assets/deploy-dark.svg" alt="Deploy: Mac DMG, laptop zip, Compose or Helm, k3s edge" loading="lazy"></picture>
+<section id="pricing">
+  <div class="center"><p class="kicker">Pricing</p><h2>A 30-day trial, then a licence.</h2><p class="sub">Introductory list prices in Indian rupees, including 18% GST. There is no online checkout yet: email us and we send a trial key or an invoice.</p></div>
   <div class="grid">
-    <div class="card rv"><h3>Mac DMG / laptop zip</h3><p>Drag the notarized Mac app into Applications, or use Docker Desktop once with the air-gap zip — seeded synthetic studies. No GitHub token.</p></div>
+    <div class="card rv"><h3>Site · ₹99,999 a year</h3><p>One site, up to 5 named users, no per-study fees. Renewal ₹79,999 a year. About US$1,009 a year.</p></div>
+    <div class="card rv"><h3>Multi-site Team · ₹69,999 per site a year</h3><p>For groups with 3 or more sites (minimum ₹2,09,997), by invoice. Renewal ₹54,999 per site a year. About US$706 per site.</p></div>
+    <div class="card rv"><h3>Free 30-day trial</h3><p>Ask for a trial key at <a href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20trial">sales@zyvor.dev</a>. When it ends the app keeps working and shows a reminder; nothing is disabled and no data is touched.</p></div>
+  </div>
+  <p class="foot">These prices are for the <strong>research and evaluation</strong> product described under Honest limits. It is not a certified medical product and is not for diagnostic use. Hosting, storage and integration work are not included.</p>
+</section>
+
+<section id="deploy">
+  <div class="center"><p class="kicker">Deploy</p><h2>Run it where your studies live.</h2><p class="sub">Doctors start with the Mac DMG or a hosted demo. IT can pull the image on a Mac, run it in Docker or FluxVM, or stand up a cluster edge.</p></div>
+  <picture class="pic rv"><img class="only-light" src="assets/deploy-light.svg" alt="Deploy: Mac DMG, Docker on a Mac, Compose or Helm, k3s edge" loading="lazy"><img class="only-dark" src="assets/deploy-dark.svg" alt="Deploy: Mac DMG, Docker on a Mac, Compose or Helm, k3s edge" loading="lazy"></picture>
+  <div class="grid">
+    <div class="card rv"><h3>Mac DMG + Docker on your Mac</h3><p>Drag the notarized Mac app into Applications, and run the archive with Docker Desktop once: seeded synthetic studies, no GitHub token.</p></div>
     <div class="card rv"><h3>Registry pull</h3><p>IT can pull the published GHCR image when the package is public, or use FluxVM on Apple silicon.</p></div>
     <div class="card rv"><h3>Your k3s / k8s</h3><p>One command on your cluster: NodePort token login, or full Envoy + Keycloak HTTPS edge — both auto-seed synthetic studies.</p></div>
   </div>
@@ -334,10 +344,10 @@
   <div class="center"><p class="kicker">FAQ</p><h2>Straight answers.</h2></div>
   <div class="faq">
     <details class="rv"><summary>Is this for diagnosis?</summary><p>No. The browser viewer is a research viewer for evaluation. It is not a certified diagnostic workstation.</p></details>
-    <details class="rv"><summary>Where does the software live?</summary><p>The product repository is private. This site is the public marketing surface and hosts <a href="https://github.com/zyvorai/zyvor-imaging-site/releases">evaluation releases</a> — Mac DMG, binary zip, screenshots, and contact. No application source.</p></details>
-    <details class="rv"><summary>How do we evaluate?</summary><p>Ask sales for a <strong>hosted demo</strong> (browser only), download the <strong>Mac DMG</strong> (drag to Applications), or use the <strong>binary zip</strong> (Docker Desktop + double-click installer). Ignore automatic “Source code” archives. Passwords are never published here — sales sends logins privately.</p></details>
+    <details class="rv"><summary>Where does the software live?</summary><p>The product repository is private. This site is the public marketing surface and hosts <a href="https://github.com/zyvorai/zyvor-imaging-site/releases">evaluation releases</a> — the Mac DMG, screenshots, and contact. No application source.</p></details>
+    <details class="rv"><summary>How do we evaluate?</summary><p>Ask sales for a <strong>hosted demo</strong> (browser only), download the <strong>Mac DMG</strong> (drag to Applications, 30-day trial), or run the archive on your Mac with Docker Desktop. Ignore automatic “Source code” archives. Passwords are never published here — sales sends logins privately.</p></details>
     <details class="rv"><summary>I am a doctor — what do I click?</summary><p><strong>Fastest:</strong> email sales for a hosted link. <strong>On a Mac:</strong> download the DMG → drag Zyvor Imaging into Applications → open → paste the Base URL and password from the sales email. <strong>Then test:</strong> Worklist → open a study → research viewer. Synthetic data only; not for diagnosis.</p></details>
-    <details class="rv"><summary>Do I have to install anything?</summary><p>Not for the demo link: it opens in your browser. The Mac app is a normal drag-to-Applications install. Only the "run it on my own PC" option needs Docker Desktop, once.</p></details>
+    <details class="rv"><summary>Do I have to install anything?</summary><p>Not for the demo link: it opens in your browser. The Mac app is a normal drag-to-Applications install. Only the "run the archive on this Mac" option needs Docker Desktop, once. There is no Windows version.</p></details>
     <details class="rv"><summary>Can I try it with my own patients' images?</summary><p>Please do not. This is an engineering release tested with synthetic data. Use the sample studies, or ask us for more synthetic ones.</p></details>
     <details class="rv"><summary>What do the AI features do, and are they on?</summary><p>They are off unless your IT team connects a model they run. They help with search and wording, never with diagnosis, and nothing is saved until you press Insert. See the product documentation we send with your evaluation.</p></details>
     <details class="rv"><summary>How do I give feedback?</summary><p>Use the "Send feedback" button in the test checklist, or email <a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a>. Tell us what confused you; that is the most useful thing.</p></details>

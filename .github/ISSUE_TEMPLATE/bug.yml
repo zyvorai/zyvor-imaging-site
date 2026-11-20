@@ -10,7 +10,7 @@ body:
     id: path
     attributes:
       label: How are you running it?
-      options: [Hosted demo link, Mac app (DMG), "Laptop zip (Docker Desktop)", Container image or cluster, The website]
+      options: [Hosted demo link, Mac app (DMG), "Docker on a Mac", Container image or cluster, The website]
     validations: { required: true }
   - type: input
     id: version
@@ -22,7 +22,7 @@ body:
     id: os
     attributes:
       label: Computer and operating system
-      placeholder: "MacBook Air, macOS 26 / Windows 11"
+      placeholder: "MacBook Air, macOS 15 or later"
   - type: textarea
     id: happened
     attributes:

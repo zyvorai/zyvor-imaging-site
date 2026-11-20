@@ -14,7 +14,6 @@ If the message mentions the app being "damaged" or from an unidentified develope
 
 Open Docker Desktop and wait until the status says it is running (this can take a minute). Then double-click the installer again.
 
-On Windows, also check that WSL2 is enabled for Docker Desktop.
 
 ## My browser did not open by itself
 
@@ -22,7 +21,6 @@ Open your browser and go to **<http://127.0.0.1:8080>**. That address is only yo
 
 ## I do not know my login
 
-- **Laptop zip:** open `DEMO-LOGIN.txt` in the unzipped folder.
 - **Demo link or Mac app against a hosted demo:** reply to our email and we will resend it.
 
 Logins are never published on this repository or on the website.
@@ -33,7 +31,7 @@ Reload the page, or try another browser (Chrome, Safari or Edge). If it is still
 
 ## The installer says Python is missing
 
-Python 3 is used once to generate the private login file (standard library only). Install it, then run the installer again. On Windows: `winget install Python.Python.3.12`.
+Python 3 is used once to generate the private login file (standard library only). Install it, then run the installer again.
 
 ## I downloaded "Source code" and it has nothing to run
 
