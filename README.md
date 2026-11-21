@@ -142,6 +142,7 @@ Sessions are hashed, mutations are origin-checked, the audit trail is recorded, 
 ## Feedback and contact
 
 - **Evaluations and demos:** [sales@zyvor.dev](mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20evaluation%20feedback&body=What%20I%20tried%3A%0A%0AWhat%20confused%20me%3A%0A%0AWhat%20I%20expected%20and%20did%20not%20find%3A%0A%0AMy%20role%20(doctor%20%2F%20technologist%20%2F%20IT)%3A)
+- **Pricing and licences:** INR 99,999 per site per year incl. 18% GST in India (up to 5 named users); US$1,009 per site per year excl. tax elsewhere. Buy: [zyvor.dev/buy](https://zyvor.dev/buy#zyvor-imaging). Orders of USD 5,000 or more and quotes are invoiced in USD through Skydo.
 - **Security:** [security@zyvor.dev](mailto:security@zyvor.dev)
 - **GitHub issues** are welcome for feedback on the evaluation. **Never include patient data, real images or credentials.** See [CONTRIBUTING.md](CONTRIBUTING.md).
 
