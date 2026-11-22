@@ -21,10 +21,11 @@
 <meta name="twitter:title" content="Zyvor Imaging · Every study. In focus.">
 <meta name="twitter:description" content="Archive, review and report — research evaluation release.">
 <meta name="twitter:image" content="https://zyvorai.github.io/zyvor-imaging-site/assets/og.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Zyvor Imaging","applicationCategory":"HealthApplication","operatingSystem":"macOS 15 or later (native app); server runs in containers on Mac, Linux or Kubernetes","description":"Medical imaging archive, research viewer, reporting workspace, scanner gateway and HealthOS adapter. Engineering release; not for diagnostic use.","publisher":{"@type":"Organization","name":"Zyvor AI Labs"},"url":"https://zyvorai.github.io/zyvor-imaging-site/","offers":[{"@type":"Offer","name":"Site, up to 5 named users, per year (India, incl. 18% GST)","price":"99999","priceCurrency":"INR","url":"https://zyvor.dev/buy"},{"@type":"Offer","name":"Site, up to 5 named users, per year (outside India, excl. tax)","price":"1009","priceCurrency":"USD","url":"https://zyvor.dev/buy"},{"@type":"Offer","name":"Multi-site Team, per site per year, minimum 3 sites (India, incl. 18% GST)","price":"69999","priceCurrency":"INR","url":"https://zyvor.dev/buy"},{"@type":"Offer","name":"Multi-site Team, per site per year, minimum 3 sites (outside India, excl. tax)","price":"706","priceCurrency":"USD","url":"https://zyvor.dev/buy"}],"downloadUrl":"https://github.com/zyvorai/zyvor-imaging-site/releases/latest"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Zyvor Imaging","applicationCategory":"HealthApplication","operatingSystem":"macOS 15 or later (native app); server runs in containers on Mac, Linux or Kubernetes","description":"Medical imaging archive, research viewer, reporting workspace, scanner gateway and HealthOS adapter. Engineering release; not for diagnostic use.","publisher":{"@type":"Organization","name":"Zyvor AI Labs"},"url":"https://zyvorai.github.io/zyvor-imaging-site/","downloadUrl":"https://github.com/zyvorai/zyvor-imaging-site/releases/latest"}</script>
 <script>window.__zyvoraTheme={key:"zyvor-imaging-site-theme"}</script>
 <script src="theme.js"></script>
 <link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="assets/zyvor-buyer.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -51,7 +52,16 @@
   <p class="kicker hero-rise">Zyvor AI Labs · Medical imaging</p>
   <h1 class="hero-rise">Every study.<br /><em>In focus.</em></h1>
   <p class="lede hero-rise"><strong>Archive, review and report on your infrastructure.</strong> A research viewer built for evaluation, now with MPR, 3D and segments. You do not need to be technical to try it: open a link, or drag one app into Applications, and look at made-up patients.</p>
-  <div class="cta hero-rise"><a class="btn primary" href="#live">Watch it, then try it live</a><a class="btn" href="#try">Try it in 2 minutes</a><a class="btn" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20demo%20access">Ask for a demo link</a></div>
+  <div class="buyer" role="group" aria-label="Get Zyvor Imaging">
+    <div class="actions">
+      <a class="btn primary" href="https://github.com/zyvorai/zyvor-imaging-site/releases/download/v0.5.0/Zyvor-Imaging-0.5.0.dmg">Download Zyvor Imaging 0.5.0</a>
+      <a class="btn ghost" href="https://zyvor.dev/contact?intent=trial&amp;product=zyvor-imaging" rel="noopener">Ask for a 30-day trial</a>
+      <a class="btn ghost" href="https://zyvor.dev/buy" rel="noopener">Buy a license</a>
+    </div>
+    <p class="sub">Zyvor-Imaging-0.5.0.dmg &middot; macOS &middot; <a href="https://zyvor.dev/pricing" rel="noopener">See current prices</a> &middot; <a href="https://github.com/zyvorai/zyvor-imaging-site/releases/tag/v0.5.0">All downloads</a></p>
+    <p class="trust"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><span><strong>Verified by Apple:</strong> Developer ID signed and notarized. This applies to the Mac app DMG.</span></p>
+    <ul class="reqs"><li>Needs an Apple silicon Mac with macOS 15 or later.</li><li>Evaluation release: use synthetic (made-up) data only. It is a research viewer and is not for diagnostic use.</li></ul>
+  </div>
   <ul class="chips" aria-label="Status">
     <li class="ok">Engineering release</li><li>Self-hosted</li><li class="warn">Synthetic data only</li><li class="warn">Not for diagnostic use</li>
   </ul>
@@ -62,6 +72,11 @@
     <button class="reel-toggle" id="reel-toggle" type="button" aria-label="Pause the recording" aria-pressed="false">Pause</button>
   </div>
   <p class="foot hero-rise">A real recording of the running app on a made-up phantom: no patient data, no mock-up. Research use only.</p>
+</section>
+
+<section class="outcomes" aria-labelledby="outcomes-h">
+  <h2 id="outcomes-h">See your studies in focus, on your own infrastructure.</h2>
+  <ul class="tiles"><li class="tile"><h3>Try it without technical skills</h3><p>Open a link, or drag one app into Applications, and look at made-up patients.</p></li><li class="tile"><h3>Look closer at a study</h3><p>A research viewer with MPR, 3D and segments, shown in a real recording of the running app.</p></li><li class="tile"><h3>Keep data where you choose</h3><p>The archive is self-hosted: run it on a Mac with Docker, on FluxVM, or on your own k3s or k8s cluster.</p></li></ul>
 </section>
 
 <section id="try" class="tint">
@@ -311,15 +326,11 @@
   <p class="center"><a class="more" href="mailto:security@zyvor.dev">security@zyvor.dev</a></p>
 </section>
 
-<section id="pricing">
-  <div class="center"><p class="kicker">Pricing</p><h2>A 30-day trial, then a licence.</h2><p class="sub">Introductory list prices: INR including 18% GST in India, US dollars excluding tax elsewhere. Email us and we send a trial key or an invoice.</p></div>
-  <div class="grid">
-    <div class="card rv"><h3>Site · ₹99,999 a year</h3><p>One site, up to 5 named users, no per-study fees. About US$1,009 a year excl. tax outside India.</p></div>
-    <div class="card rv"><h3>Multi-site Team · ₹69,999 per site a year</h3><p>For groups with 3 or more sites (minimum ₹2,09,997, about US$2,119 excl. tax), by invoice. About US$706 per site excl. tax outside India.</p></div>
-    <div class="card rv"><h3>Free 30-day trial</h3><p>Ask for a trial key at <a href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20trial">sales@zyvor.dev</a>. When it ends the app keeps working and shows a reminder; nothing is disabled and no data is touched.</p></div>
-  </div>
-  <div class="cta"><a class="btn primary" href="https://zyvor.dev/buy">Buy</a><a class="btn" href="mailto:sales@zyvor.dev?subject=Zyvor%20Imaging%20trial">Start 30-day trial</a></div>
-  <p class="foot">Prices: INR incl. 18% GST in India; US dollars excl. tax elsewhere (VAT, GST or sales tax added where applicable). Pay online by UPI, card or netbanking; international cards work (charged in rupees); or request a US-dollar invoice by bank transfer. Custom pricing: <a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a>. These prices are for the <strong>research and evaluation</strong> product described under Honest limits. It is not a certified medical product and is not for diagnostic use. Hosting, storage and integration work are not included.</p>
+<section class="buy-pointer" id="pricing" aria-labelledby="pricing-h">
+  <h2 id="pricing-h">Prices and licenses</h2>
+  <p>Current prices, in your currency where available, are on zyvor.dev. You can ask for a 30-day trial before you decide. The app keeps working when the trial ends and nothing is disabled.</p>
+  <p class="cta"><a class="btn primary" href="https://zyvor.dev/buy" rel="noopener">Buy a license</a><a class="btn ghost" href="https://zyvor.dev/contact?intent=trial&amp;product=zyvor-imaging" rel="noopener">Ask for a 30-day trial</a><a class="textlink" href="https://zyvor.dev/pricing" rel="noopener">See current prices</a></p>
+  <p class="foot">Licenses cover the research and evaluation product described under Honest limits. It is not a certified medical product and is not for diagnostic use. Hosting, storage and integration work are not included.</p>
 </section>
 
 <section id="deploy">
@@ -370,7 +381,7 @@
     <span>Zyvor Imaging</span>
   </div>
   <p>Engineering release · Synthetic data only · Not for diagnostic use</p>
-  <p><a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a> · <a href="mailto:security@zyvor.dev">security@zyvor.dev</a></p>
+  <p><a href="https://zyvor.dev">zyvor.dev</a> · <a href="https://github.com/zyvorai/zyvor-imaging-site/blob/main/LICENSE">License</a> · Support: <a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a> · <a href="mailto:security@zyvor.dev">security@zyvor.dev</a></p>
   <p>© 2026 Zyvor AI Labs. All rights reserved.</p>
 </footer>
 <script src="site.js"></script>
